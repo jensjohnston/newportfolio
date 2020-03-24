@@ -1,0 +1,34 @@
+@font-face {
+font-family: "Raisonne Demibold";
+src: url("assets/fonts/Raisonne Demibold.ttf") format('truetype');
+font-weight: normal;
+}
+
+@font-face {
+    font-family: "UniversalSans";
+    src: url("assets/fonts/UniversalSans.ttf") format('truetype');
+    font-weight: normal;
+    }
+
+    @font-face {
+        font-family: Bandeins;
+        src: url(/assets/fonts/bandeinsstrangevariablegx.ttf);
+    }
+    
+
+
+    h1 {
+        font-size: 40px;
+        font-family: "Bandeins";
+    }
+
+    h2{
+        font-family: "Bandeins";
+        line-height: 110%;
+    }
+
+    
+
+
+
+   

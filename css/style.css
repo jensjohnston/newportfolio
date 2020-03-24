@@ -1,0 +1,225 @@
+:root {
+  --latchblue: #dadce7;
+  --apostrophegold: #b6a066;
+  --almostblack: #2F2F2F;
+  --acnegrey: #EEEEEE;
+  --darkblue: #1C1E27;
+}
+
+body {
+  font-family: 'UniversalSans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #414141;
+  background-image: url(/assets/images/background.jpg);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: #2f2f2f;
+}
+
+
+
+/*----Borders----*/
+
+.frame {
+  border: 16px solid var(--almostblack);
+}
+
+.border-bottom {
+  border-bottom: 16px solid var(--almostblack);
+}
+
+.border-right {
+  border-right: 8px solid var(--almostblack);
+}
+
+.border-left {
+  border-left: 8px solid var(--almostblack);
+}
+
+.border-right16 {
+  border-right: 16px solid var(--almostblack);
+}
+
+.border-left16 {
+  border-left: 16px solid var(--almostblack);
+}
+
+
+
+/*Color*/
+.bg-blue{
+  background-color: var(--latchblue);
+}
+
+.bg-gold{
+  background-color: var(--apostrophegold);
+}
+
+.bg-black {
+  background-color: var(--almostblack);
+}
+
+.bg-grey {
+  background-color: var(--acnegrey);
+}
+
+.bg-dark-blue{
+  background-color: var(--darkblue);
+}
+
+.gold{
+  color: var(--apostrophegold);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------Stranger------*/
+section.stranger{
+  color: var(--apostrophegold);
+}
+
+
+
+
+/*------Me------*/
+section.me{
+  /*position: sticky;
+  position: -webkit-sticky;
+  top: 0;*/
+}
+
+.image-jens{
+  background-image: url(/assets/images/jens.jpg);
+}
+
+.full-image{
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  top: 0; 
+}
+
+
+
+/*-----What I like-----*/
+section.whatilike{
+  /*position: sticky;
+  position: -webkit-sticky;
+  top: 0;*/
+  color: var(--apostrophegold);
+  z-index: 1;
+}
+
+
+
+/*-----What I like-----*/
+section.whatido{
+  z-index: 1000;
+  color: var(--almostblack);
+}
+
+.image-pen{
+  background-image: url(/assets/images/pentool.svg);
+}
+
+
+nav .logo-jens {
+    position:  fixed;
+    top:  40px;
+    left:  80px;
+    z-index: 1;
+    background: linear-gradient(180deg,transparent 50%,#ffff00 0)
+}
+
+nav {
+  font-family: "Bandeins";
+  position:  fixed;
+  top: 40px;
+  right: 80px;
+  z-index: 1;
+  background: linear-gradient(180deg,transparent 50%,#ffff00 0)
+}
+
+nav a {
+  text-decoration:  none;
+  font-variation-settings: "wght" 100, "wdth" 100;
+  transition:  font-variation-settings 0.2s;
+}
+
+nav a:hover {
+  font-variation-settings: "wght" 900, "wdth" 200;
+}
+
+
+
+/*----Work----*/
+
+.work-text {
+  color: var(--acnegrey);
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+}
+
+
+
+
+.image-åwl {
+  background-image: url(/assets/images/momo.jpg);
+  position: relative;
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: var(--darkblue);
+  opacity: .8;
+  position: absolute;
+}
+
+.font-overlay{
+  z-index: 1;
+}
+
+
+
+.image-wentbent{
+  background-image: url(/assets/images/jens.jpg);
+  filter:opacity(20%);
+}
+
+
+.image-dw{
+  background-image: url(/assets/images/jens.jpg);
+  filter:opacity(20%);
+}
+
+
+
+/*Footer*/
+.footer{
+  background: linear-gradient(180deg,transparent 40%,#ffff00 0);
+  color: var(--almostblack);
+  font-variation-settings: "wght" 100, "wdth" 100;
+  transition:  font-variation-settings 0.2s;
+}
+
+.footer:hover{
+  font-variation-settings: "wght" 900, "wdth" 200;
+  transition:  font-variation-settings 0.2s;
+}
+
