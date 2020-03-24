@@ -34,6 +34,10 @@ a {
   border-bottom: 16px solid var(--almostblack);
 }
 
+.border-top{
+  border-top: 16px solid var(--almostblack);
+}
+
 .border-right {
   border-right: 8px solid var(--almostblack);
 }
@@ -78,6 +82,33 @@ a {
 }
 
 
+
+
+nav .logo-jens {
+  position:  fixed;
+  top:  40px;
+  left:  80px;
+  z-index: 1;
+}
+
+nav {
+font-family: "Bandeins";
+position:  fixed;
+top: 40px;
+right: 80px;
+z-index: 1;
+background: linear-gradient(180deg,transparent 50%,#ffff00 0)
+}
+
+nav a {
+text-decoration:  none;
+font-variation-settings: "wght" 100, "wdth" 100;
+transition:  font-variation-settings 0.2s;
+}
+
+nav a:hover {
+font-variation-settings: "wght" 900, "wdth" 200;
+}
 
 
 
@@ -137,33 +168,6 @@ section.whatido{
 }
 
 
-nav .logo-jens {
-    position:  fixed;
-    top:  40px;
-    left:  80px;
-    z-index: 1;
-    background: linear-gradient(180deg,transparent 50%,#ffff00 0)
-}
-
-nav {
-  font-family: "Bandeins";
-  position:  fixed;
-  top: 40px;
-  right: 80px;
-  z-index: 1;
-  background: linear-gradient(180deg,transparent 50%,#ffff00 0)
-}
-
-nav a {
-  text-decoration:  none;
-  font-variation-settings: "wght" 100, "wdth" 100;
-  transition:  font-variation-settings 0.2s;
-}
-
-nav a:hover {
-  font-variation-settings: "wght" 900, "wdth" 200;
-}
-
 
 
 /*----Work----*/
@@ -174,6 +178,7 @@ nav a:hover {
   text-orientation: sideways;
   transform: rotate(180deg);
 }
+
 
 
 
@@ -191,21 +196,15 @@ nav a:hover {
   position: absolute;
 }
 
+
+
+.work-hover:hover {
+  box-shadow: 2px 3px 12px 0px rgba(0,0,0,0.75);
+  transition: box-shadow .2s,transform .2s,background-color .2s;
+}
+
 .font-overlay{
   z-index: 1;
-}
-
-
-
-.image-wentbent{
-  background-image: url(/assets/images/jens.jpg);
-  filter:opacity(20%);
-}
-
-
-.image-dw{
-  background-image: url(/assets/images/jens.jpg);
-  filter:opacity(20%);
 }
 
 
