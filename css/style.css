@@ -121,6 +121,7 @@ font-variation-settings: "wght" 900, "wdth" 200;
 /*------Stranger------*/
 section.stranger{
   color: var(--apostrophegold);
+  
 }
 
 
@@ -128,9 +129,9 @@ section.stranger{
 
 /*------Me------*/
 section.me{
-  /*position: sticky;
+  position: sticky;
   position: -webkit-sticky;
-  top: 0;*/
+  top: 0;
 }
 
 .image-jens{
@@ -148,18 +149,21 @@ section.me{
 
 /*-----What I like-----*/
 section.whatilike{
-  /*position: sticky;
+  position: sticky;
   position: -webkit-sticky;
-  top: 0;*/
+  top: 0;
   color: var(--apostrophegold);
-  z-index: 1;
+  z-index: 2;
 }
 
 
 
-/*-----What I like-----*/
+/*-----What I Do-----*/
 section.whatido{
-  z-index: 1000;
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 3;
+  top: 0;
   color: var(--almostblack);
 }
 
@@ -171,6 +175,10 @@ section.whatido{
 
 
 /*----Work----*/
+
+section.work{
+  z-index:40;
+}
 
 .work-text {
   color: var(--acnegrey);
