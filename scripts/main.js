@@ -14,6 +14,35 @@ window.addEventListener("scroll", function () {
 
 
 
+
+inView('.section')
+    .on('enter', section => {
+        // classList.add is the same as jQuery’s .addClass() method
+        // but the vanilla javascript version
+        section.classList.add('in-viewport')
+    })
+    .on('exit', section => {
+        section.classList.remove('in-viewport')
+    })
+
+// here we set the class to add only once we have scrolled 0.2 of 
+// our section into the viewport
+inView.threshold(0.3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*const headerTags = document.querySelectorAll(".lag")
 const random = "abcdefghijklmnopqrstuvwxyz–./\[]*+£$ ".split("")
 
@@ -127,3 +156,6 @@ function init() {
     // Init TypeWriter
     new TypeWriter(txtElement, words, wait);
 }
+
+
+

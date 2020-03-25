@@ -89,6 +89,11 @@ nav .logo-jens {
   top:  40px;
   left:  80px;
   z-index: 1;
+  transition: color 0.5s;
+}
+
+.logo-jens {
+  color: var(--apostrophegold)
 }
 
 nav {
@@ -129,9 +134,10 @@ section.stranger{
 
 /*------Me------*/
 section.me{
+  /*
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: 0;*/
 }
 
 .image-jens{
@@ -149,21 +155,22 @@ section.me{
 
 /*-----What I like-----*/
 section.whatilike{
+  /*
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: 0;*/
   color: var(--apostrophegold);
-  z-index: 2;
 }
 
 
 
 /*-----What I Do-----*/
 section.whatido{
+  /*
   position: sticky;
   position: -webkit-sticky;
   z-index: 3;
-  top: 0;
+  top: 0;*/
   color: var(--almostblack);
 }
 
@@ -215,6 +222,19 @@ section.work{
   z-index: 1;
 }
 
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: var(--almostblack);
+  position: absolute;
+  top: 50px;
+  left: -50px;
+}
+
+.content {
+  position: relative;
+}
 
 
 /*Footer*/
