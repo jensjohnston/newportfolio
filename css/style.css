@@ -11,10 +11,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: #414141;
-  background-image: url(/assets/images/background.jpg);
-  background-size: 100% auto;
-  background-position: center top;
-  background-repeat: no-repeat;
+  background-color: #EEEEEE;
   overflow-x: hidden;
 }
 
@@ -118,47 +115,7 @@ font-variation-settings: "wght" 900, "wdth" 200;
 
 
 
-.ass {
-  position: absolute;
-  z-index: 1; }
-  @media (max-width: 1040px) {
-    .ass {
-      display: none; } }
 
-@-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg); } }
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-@-moz-keyframes rspin {
-  100% {
-    -moz-transform: rotate(-360deg); } }
-@-webkit-keyframes rspin {
-  100% {
-    -webkit-transform: rotate(-360deg); } }
-@keyframes rspin {
-  100% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg); } }
-#big-ass {
-  top: 180px;
-  left: -300px; 
-  -webkit-animation: spin 12s linear infinite;
-  -moz-animation: spin 12s linear infinite;
-  animation: spin 12s linear infinite; }
-
-#regular-ass {
-  overflow: hidden;
-  top: 20%;
-  right: 20px;
-  -webkit-animation: rspin 16s linear infinite;
-  -moz-animation: rspin 16s linear infinite;
-  animation: rspin 16s linear infinite; }
 
 
 

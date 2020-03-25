@@ -37,58 +37,6 @@ inView.threshold(0.3)
 
 
 
-
-
-
-
-
-
-/*const headerTags = document.querySelectorAll(".lag")
-const random = "abcdefghijklmnopqrstuvwxyz–./\[]*+£$ ".split("")
-
-
-const runRandom = (tag) => {
-    const originalContent = tag.dataset.original
-
-    let newContent = ""
-    let num = 0
-
-    let addInterval = setInterval(() => {
-        newContent = originalContent.slice(0, num)
-        num = num + 1
-
-        if (tag.innerHTML == originalContent) {
-            clearInterval(randomInterval)
-            clearInterval(addInterval)
-            tag.innerHTML = originalContent
-        }
-    }, 100)
-
-    let randomInterval = setInterval(() => {
-        tag.innerHTML = newContent
-
-        for (let i = newContent.length; i < originalContent.length; i++) {
-            tag.innerHTML += random[Math.floor(Math.random() * random.length)]
-        }
-    }, 50)
-}
-
-let observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.intersectionRatio > 0.5) {
-            runRandom(entry.target)
-        }
-    })
-}, {
-    threshold: [0.0, 0.5, 1.0]
-})
-
-headerTags.forEach(h1 => {
-    h1.dataset.original = h1.innerHTML
-    observer.observe(h1)
-})*/
-
-
 // ES6 Class
 class TypeWriter {
     constructor(txtElement, words, wait = 3000) {
@@ -157,5 +105,33 @@ function init() {
     new TypeWriter(txtElement, words, wait);
 }
 
+
+
+
+
+const wavePath = document.querySelector('#wave path')
+const waveOffset = anime.setDashoffset(wavePath)
+
+wavePath.setAttribute('stroke-dashoffset', waveOffset)
+anime({
+    targets: wavePath,
+    strokeDashoffset: [0, waveOffset],
+    duration: 10000,
+    loop: true,
+    direction: 'alternate',
+    easing: 'easeInOutSine',
+})
+
+
+anime({
+    targets: '#el',
+    translateY: -500,
+    direction: 'alternate',
+    duration: 100000,
+    loop: true,
+    easing: 'linear',
+    rotate: '1turn',
+    complete: 'randomValues'
+});
 
 
