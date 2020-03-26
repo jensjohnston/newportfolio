@@ -14,11 +14,16 @@
     }
 
    
-    .in-viewport .squares{
+    .in-viewport .line1,
+    .in-viewport .line2,
+    .in-viewport .line3{
       width: 50px;
       height: 5px;
       background-color: #2f2f2f;
     }
+
+  
     
-    
+
+   
 }

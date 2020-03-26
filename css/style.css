@@ -82,36 +82,7 @@ a {
 
 
 
-nav .logo-jens {
-  position:  fixed;
-  top:  40px;
-  left:  80px;
-  z-index: 1;
-  transition: color 0.5s;
-}
 
-.logo-jens {
-  color: var(--apostrophegold)
-}
-
-nav {
-font-family: "Bandeins";
-position:  fixed;
-top: 40px;
-right: 80px;
-z-index: 1;
-background: linear-gradient(180deg,transparent 50%,#ffff00 0)
-}
-
-nav a {
-text-decoration:  none;
-font-variation-settings: "wght" 100, "wdth" 100;
-transition:  font-variation-settings 0.2s;
-}
-
-nav a:hover {
-font-variation-settings: "wght" 900, "wdth" 200;
-}
 
 
 
@@ -236,12 +207,7 @@ section.work{
   /*transition:  font-variation-settings 0.2s;*/
 }
 
-.font-overlay:hover{
--webkit-text-fill-color: transparent;
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: #fff;
-  /*transition:  -webkit-text-fill-color 0.2s;*/
-}
+
 
 
 

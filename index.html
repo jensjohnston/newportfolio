@@ -20,21 +20,61 @@
 
 <body>
 
-	<nav>
+	<!--<nav>
 		<!--<a href="contact.html">
 			<div class="f1">
 				Contact
 			</div>
-		</a>-->
-
-		<a href="contact.html">
-			<div class="f2 f2-ns logo-jens">
-				Jens Johnston
-			</div>
 		</a>
 
+	<a href="contact.html">
+		<div class="f2 f2-ns logo-jens">
+			Jens Johnston
+		</div>
+	</a>
 
-	</nav>
+
+	</nav>-->
+
+	<!-- header + menu -->
+	<header class="top" id="top" name="top">
+		<a href="index.html">
+			<h1>Jens Johnston </h1>
+		</a>
+		<a href="#" class="menu-open"><img src="/assets/images/menu-icon.svg"></a>
+	</header>
+
+	<div class="menu">
+
+		<!-- header in menu -->
+		<header>
+			<a href="index.html">
+				<h1>Jens Johnston</h1>
+			</a>
+			<a href="#" class="menu-close"><img src="/assets/images/close-icon.svg"></a>
+		</header>
+
+		<nav id="top-navigation">
+			<div class="menu-big">
+				<a href="index.html">Work</a>
+				<a href="about.html">About</a>
+			</div>
+
+			<div class="menu-small">
+				<p>Hola at me</p>
+				<a href="mailto:jens.johnston@hyperisland.se">
+					<h2>jens.johnston@hyperisland.se</h2><span class="underline-grey"></span>
+				</a>
+			</div>
+
+			<div class="menu-small">
+				<p>FOLGEN SIE MIR</p>
+				<p><a href="https://www.behance.net/MAR_S_" target="_blank">Behance</a> – <a
+						href="https://www.instagram.com/msxgd/" target="_blank">Instagram</a></p>
+			</div>
+		</nav>
+
+	</div>
 
 	<!--<div class="flex justify-between bg-blue min-vh-100">
 
@@ -66,7 +106,7 @@
 
 	</section>
 
-	<section class="me fade-in line-1">
+	<section class="me fade-in lines">
 		<div class="w-100 flex items-stretch  border-right16 border-bottom border-left16">
 			<div class="w-50 flex flex-column justify-left items-start ph3 pv4 ph5-ns pv6-ns border-right">
 				<p class="pb2 fade">Who I am</p>
@@ -78,8 +118,8 @@
 					firms in
 					Melbourne and London.
 				</div>
-				<div class="squares"></div>
-				<div class="squares element"></div>
+				<div class="line2"></div>
+
 			</div>
 			<div class="w-50 border-left flex justify-center items-center full-image image-jens">
 
@@ -90,7 +130,7 @@
 
 
 
-	<section class="whatilike fade-in">
+	<section class="whatilike fade-in lines">
 		<div class="flex justify-center items-center bg-dark-blue ph3 ph5-ns pv4 pv6-ns lh-title min-vh-100">
 			<div class="flex flex-column">
 				<p class="pb2 fade">What I like</p>
@@ -101,7 +141,7 @@
 					firms in
 					Melbourne and London.
 				</div>
-				<div class="squares fade" id="square-like"></div>
+				<div class="line1 fade" id="square-like"></div>
 			</div>
 		</div>
 	</section>
@@ -115,7 +155,7 @@
 
 	<section class="whatido fade-in">
 		<div class="flex flex-wrap min-vh-100 ">
-			<div class="w-25 bg-grey flex items-center justify-center">
+			<div class="w-25 bg-grey flex items-center justify-center pl6">
 				<div class="h-80" id="wave">
 					<svg width="40%" height="100%" viewBox="0 0 121 661" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
@@ -130,10 +170,10 @@
 
 				</div>
 			</div>
-			<div class="w-50 flex justify-center bg-grey">
+			<div class="w-50 flex justify-center bg-grey lines">
 				<div class="flex justify-center flex-column">
 					<p class="pb2 fade">What I do</p>
-					<div class="f3  f2-ns measure-narrow fade">
+					<div class="f3  f2-ns measure-narrow fade pb4">
 						I began working in the industry in my first year at university, affirming my passion for
 						architecture. I
 						now have over five years experience, working for a diverse range of architecture and design
@@ -141,6 +181,7 @@
 						Melbourne and London.
 
 					</div>
+					<div class="line3"></div>
 				</div>
 			</div>
 			<div class="w-25 bg-grey flex items-end justify-center">
@@ -237,6 +278,7 @@
 
 		<script src="/scripts/in-view.js"></script>
 		<script src="/scripts/anime.min.js"></script>
+		<script src="/scripts/jquery.js"></script>
 		<script src="/scripts/main.js"></script>
 </body>
 
