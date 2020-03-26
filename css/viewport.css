@@ -1,0 +1,16 @@
+
+/*We arerunning our viewport transitions only on wider screens*/
+
+
+@media (min-width: 640px) {
+
+    .fade {
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+    
+    .in-viewport .fade {
+      opacity: 1;
+    }
+    
+  }

@@ -52,12 +52,12 @@
 
 
 
-	<section class="stranger section">
+	<section class="stranger fade-in">
 		<div class="flex items-center bg-dark-blue min-vh-100 border-bottom frame">
 			<div class="w-100 flex  ph3 pv4 ph5-ns pv6-ns">
 				<h1 class="f2 f-headline-ns lh-solid b fade">
 					<span class="txt-type" data-wait="1000"
-						data-words='["Hello Stranger.", "Hej Främling.", "sawubona mfokazi.", "Halló ókunnugur."]'></span><br>
+						data-words='["Hello Stranger.", "Hej Främling."]'></span><br>
 					Let’s start with an
 					intro.
 				</h1>
@@ -66,12 +66,11 @@
 
 	</section>
 
-	<section class="me section">
-		<div class="w-100 flex items-stretch bg-blue border-right16 border-bottom border-left16">
-			<div class="w-50  ph3 pv4 ph5-ns pv6-ns border-right">
-				<!--<h2 class="pb4 f-subheadline carolina b fade">Me.</h2>-->
+	<section class="me fade-in">
+		<div class="w-100 flex items-stretch  border-right16 border-bottom border-left16">
+			<div class="w-50 flex flex-column justify-left items-start ph3 pv4 ph5-ns pv6-ns border-right">
 				<p class="pb2 fade">Who I am</p>
-				<div class="flex justify-center items-center f3 f2-ns measure lh-title fade">
+				<div class="f3 f2-ns  lh-title fade pb4">
 					I began working in the industry in my first year at university, affirming my passion for
 					architecture. I
 					now have over five years experience, working for a diverse range of architecture and
@@ -79,44 +78,58 @@
 					firms in
 					Melbourne and London.
 				</div>
+				<div class="squares fade"></div>
 			</div>
-			<div class="w-50 full-image image-jens border-left"></div>
+			<div class="w-50 border-left flex justify-center items-center full-image image-jens">
+
+			</div>
 		</div>
 	</section>
 
 
 
 
-	<section class="whatilike section">
-		<div class="flex justify-center bg-dark-blue ph3 ph5-ns pv4 pv6-ns lh-title">
+	<section class="whatilike fade-in">
+		<div class="flex justify-center items-center bg-dark-blue ph3 ph5-ns pv4 pv6-ns lh-title min-vh-100">
 			<div class="flex flex-column">
 				<p class="pb2 fade">What I like</p>
-				<div class=" f3 f1-ns measure fade">
+				<div class=" f3 f1-ns measure fade pb4">
 					I began working in the industry in my first year at university, affirming my passion for
 					architecture. I
 					now have over five years experience, working for a diverse range of architecture and design
 					firms in
 					Melbourne and London.
 				</div>
+				<div class="squares fade" id="square-like"></div>
 			</div>
 		</div>
 	</section>
 
 
-	<!--<section class="whatido section bg-grey">
-		<div class="flex  justify-center items-center items-stretch bg-grey min-vh-100">
-
-			<div class="w-30">
-
-				<div class="box w-100 vh-100 flex flex-wrap justify-around pv3 items-center">
-
-					<div id="wave">
 
 
-					</div>
+
+
+
+
+	<section class="whatido fade-in">
+		<div class="flex flex-wrap min-vh-100 ">
+			<div class="w-25 bg-grey flex items-center justify-center">
+				<div class="h-80" id="wave">
+					<svg width="40%" height="100%" viewBox="0 0 121 661" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M11.5296 5.68164C41.9665 42.9766 49.9022 74.7581 51.7104 96.4537C56.8892 158.661 15.8267 187.831 31.62 247.741C39.645 278.2 59.3112 304.972 61.7556 308.255C88.2861 343.847 113.823 351.165 111.982 368.77C109.504 392.416 61.4989 397.94 61.7556 419.199C61.9676 436.446 93.7105 443.763 91.8912 459.542C90.2504 473.808 63.3182 476.195 61.7556 489.799C60.2934 502.53 91.9916 507.147 91.8912 520.057C91.813 529.862 74.3456 530.176 61.7556 550.314C54.0654 562.619 52.3131 575.73 51.7104 580.572C50.025 594.131 53.3511 596.373 51.7104 610.829C50.5049 621.453 49.2214 632.771 41.6652 641.086C28.6287 655.43 5.16761 651.8 1.48438 651.172"
+							stroke="#4F80FF" stroke-width="16" stroke-miterlimit="10" />
+					</svg>
+
+
+
+
+
+
 				</div>
 			</div>
-			<div class="w-70 flex  justify-left items-center">
+			<div class="w-50 flex justify-center bg-grey">
 				<div class="flex justify-center flex-column">
 					<p class="pb2 fade">What I do</p>
 					<div class="f3  f2-ns measure-narrow fade">
@@ -125,67 +138,42 @@
 						now have over five years experience, working for a diverse range of architecture and design
 						firms in
 						Melbourne and London.
+
 					</div>
 				</div>
-
 			</div>
-	</section>-->
+			<div class="w-25 bg-grey flex items-end justify-center">
+				<div class="w-40">
+					<svg width="100%" height="100%" id="el" viewBox="0 0 266 297" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0)">
+							<path d="M19.4 19.3999H0V59.1199H19.4V19.3999Z" fill="#2F2F2F" />
+							<path
+								d="M110.828 255.84H126.528V38.79H38.7884V59.11H19.3984V79.43H38.7884H58.1884V59.11H110.828V255.84Z"
+								fill="#2F2F2F" />
+							<path d="M246.598 19.4V0H130.228H19.3984V19.4H130.228H246.598V59.11H265.998V19.4H246.598Z"
+								fill="#2F2F2F" />
+							<path
+								d="M227.209 38.79H139.469V255.84H155.169V59.11H207.809V79.43H227.209H246.599V59.11H227.209V38.79Z"
+								fill="#2F2F2F" />
+							<path
+								d="M174.559 255.84H155.159H110.829H110.759H91.4291V276.16H72.0391V296.48H110.759V276.16H110.829H130.079V280.42V296.48H193.959V276.16H174.559V255.84Z"
+								fill="#2F2F2F" />
+						</g>
+						<defs>
+							<clipPath id="clip0">
+								<rect width="266" height="296.48" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
 
-
-
-
-
-
-	<div class="flex flex-wrap min-vh-100 ">
-		<div class="w-25 bg-grey flex items-start justify-center">
-			<div class="h-100" id="wave">
-				<svg width="100%" height="100%" viewBox="0 0 233 661" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M151.011 7.01001C186.871 26.7 228.181 54.41 224.011 79.01C216.851 121.26 80.5406 124.61 80.0106 151.01C79.4706 177.9 220.671 187.15 224.011 223.01C228.211 268.1 9.41056 301.08 8.01056 367.01C6.94056 417.65 135.291 432.47 152.011 511.01C163.021 562.75 120.111 616.4 80.0106 655.01"
-						stroke="#4F80FF" stroke-width="16" stroke-miterlimit="10" />
-				</svg>
-
-
-
-			</div>
-		</div>
-		<div class="w-50 flex justify-center bg-grey">
-			<div class="flex justify-center flex-column">
-				<p class="pb2">What I do</p>
-				<div class="f3  f2-ns measure-narrow">
-					I began working in the industry in my first year at university, affirming my passion for
-					architecture. I
-					now have over five years experience, working for a diverse range of architecture and design
-					firms in
-					Melbourne and London.
 
 				</div>
 			</div>
 		</div>
-		<div class="w-25 bg-grey flex items-end justify-center">
+	</section>
 
-			<div class="w-40">
-				<svg width="100%" height="100%" id="el" viewBox="0 0 48 101" fill="none"
-					xmlns="http://www.w3.org/2000/svg">
-					<path d="M41.7933 63.5418H35.8219V68.7644H41.7933V63.5418Z" fill="#2F2F2F" />
-					<path
-						d="M45.5215 80.7071V86.6753H36.5676V100.106H23.8541V86.2524H18.6942V100.106H11.194V86.6753H2.23691V80.704H11.9396V68.7644H17.911V80.704H29.8506V68.7644H35.8219V80.704L45.5215 80.7071Z"
-						fill="#2F2F2F" />
-					<path d="M47.7647 50.8534H41.7933V63.5418H47.7647V50.8534Z" fill="#2F2F2F" />
-					<path d="M41.7933 38.1682H35.8219V50.8565H41.7933V38.1682Z" fill="#2F2F2F" />
-					<path d="M35.8219 25.4798H29.8506V38.1682H35.8219V25.4798Z" fill="#2F2F2F" />
-					<path d="M11.9427 63.5418H5.97136V68.7644H11.9427V63.5418Z" fill="#2F2F2F" />
-					<path d="M5.97136 50.8534H0V63.5418H5.97136V50.8534Z" fill="#2F2F2F" />
-					<path d="M11.9427 38.1682H5.97136V50.8565H11.9427V38.1682Z" fill="#2F2F2F" />
-					<path d="M17.911 25.4798H11.9396V38.1682H17.911V25.4798Z" fill="#2F2F2F" />
-					<path
-						d="M20.8966 51.599H26.868V25.4798H29.8506V12.7946H26.1192V0.106201H21.6423V12.7946H17.911V25.4798H20.8966V51.599Z"
-						fill="#2F2F2F" />
-				</svg>
 
-			</div>
-		</div>
-	</div>
 
 
 

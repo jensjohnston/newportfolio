@@ -15,7 +15,7 @@ window.addEventListener("scroll", function () {
 
 
 
-inView('.section')
+inView('.fade-in')
     .on('enter', section => {
         // classList.add is the same as jQuery’s .addClass() method
         // but the vanilla javascript version
@@ -28,7 +28,6 @@ inView('.section')
 // here we set the class to add only once we have scrolled 0.2 of 
 // our section into the viewport
 inView.threshold(0.3)
-
 
 
 
@@ -135,3 +134,12 @@ anime({
 });
 
 
+
+anime({
+    targets: '.squares',
+    width: '0%', // -> from '100px' to '100%',
+    easing: 'easeInOutQuad',
+    direction: 'normal',
+    duration: 3000,
+
+});

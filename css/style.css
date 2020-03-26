@@ -138,6 +138,8 @@ section.me{
   position: sticky;
   position: -webkit-sticky;
   top: 0;*/
+  color: var(--almostblack)
+
 }
 
 .image-jens{
@@ -145,20 +147,34 @@ section.me{
 }
 
 .full-image{
-  min-height: 100vh;
+  min-height: 70vh;
   background-size: cover;
   background-position: center;
   top: 0; 
 }
 
+.squares {
+ width: 20px;
+  height: 5px;
+  background-color: var(--almostblack);
+}
+
+#square-like{
+  background-color: var(--apostrophegold);
+}
+
+
+
+
+
+
 
 
 /*-----What I like-----*/
 section.whatilike{
-  /*
   position: sticky;
   position: -webkit-sticky;
-  top: 0;*/
+  top: 0;
   color: var(--apostrophegold);
 }
 
@@ -166,11 +182,10 @@ section.whatilike{
 
 /*-----What I Do-----*/
 section.whatido{
-  /*
+  
   position: sticky;
   position: -webkit-sticky;
-  z-index: 3;
-  top: 0;*/
+  top: 0;
   color: var(--almostblack);
 }
 
@@ -184,7 +199,7 @@ section.whatido{
 /*----Work----*/
 
 section.work{
-  z-index:40;
+  
 }
 
 .work-text {
@@ -236,6 +251,10 @@ section.work{
   position: relative;
 }
 
+
+section.footer{
+  z-index:400;
+}
 
 /*Footer*/
 .footer{
