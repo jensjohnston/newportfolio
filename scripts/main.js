@@ -20,7 +20,18 @@ inView('.fade-in')
         // classList.add is the same as jQuery’s .addClass() method
         // but the vanilla javascript version
         section.classList.add('in-viewport')
+
+        anime({
+            targets: '.squares',
+            width: '0%', // -> from '100px' to '100%',
+            easing: 'easeInOutQuad',
+            direction: 'normal',
+            duration: 3000,
+        });
     })
+
+
+
     .on('exit', section => {
         section.classList.remove('in-viewport')
     })
@@ -134,12 +145,3 @@ anime({
 });
 
 
-
-anime({
-    targets: '.squares',
-    width: '0%', // -> from '100px' to '100%',
-    easing: 'easeInOutQuad',
-    direction: 'normal',
-    duration: 3000,
-
-});
