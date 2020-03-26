@@ -15,19 +15,12 @@ window.addEventListener("scroll", function () {
 
 
 
-inView('.fade-in')
+inView('section')
     .on('enter', section => {
         // classList.add is the same as jQuery’s .addClass() method
         // but the vanilla javascript version
         section.classList.add('in-viewport')
 
-        anime({
-            targets: '.squares',
-            width: '0%', // -> from '100px' to '100%',
-            easing: 'easeInOutQuad',
-            direction: 'normal',
-            duration: 3000,
-        });
     })
 
 
@@ -144,4 +137,12 @@ anime({
     complete: 'randomValues'
 });
 
+
+anime({
+    targets: '.squares',
+    width: '0%', // -> from '100px' to '100%',
+    easing: 'easeInOutQuad',
+    direction: 'normal',
+    duration: 3000,
+});
 

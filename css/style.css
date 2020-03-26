@@ -139,7 +139,7 @@ section.me{
   position: -webkit-sticky;
   top: 0;*/
   color: var(--almostblack)
-
+  
 }
 
 .image-jens{
@@ -153,10 +153,11 @@ section.me{
   top: 0; 
 }
 
-.squares {
- width: 20px;
-  height: 5px;
-  background-color: var(--almostblack);
+
+.squares{
+  width: 10px;
+  height: 10px;
+  background-color: blue;
 }
 
 #square-like{
@@ -172,20 +173,22 @@ section.me{
 
 /*-----What I like-----*/
 section.whatilike{
+  /*
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: 0;*/
   color: var(--apostrophegold);
+  
 }
 
 
 
 /*-----What I Do-----*/
 section.whatido{
-  
+  /*
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: 0;*/
   color: var(--almostblack);
 }
 
@@ -199,7 +202,9 @@ section.whatido{
 /*----Work----*/
 
 section.work{
-  
+  /*position: sticky;
+  position: -webkit-sticky;
+  top: 0;*/
 }
 
 .work-text {
@@ -228,14 +233,21 @@ section.work{
 
 
 
-.work-hover:hover {
-  box-shadow: 2px 3px 12px 0px rgba(0,0,0,0.75);
-  transition: box-shadow .2s,transform .2s,background-color .2s;
-}
+
 
 .font-overlay{
   z-index: 1;
+  
+  /*transition:  font-variation-settings 0.2s;*/
 }
+
+.font-overlay:hover{
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #fff;
+  /*transition:  -webkit-text-fill-color 0.2s;*/
+}
+
 
 
 .square {
@@ -251,10 +263,6 @@ section.work{
   position: relative;
 }
 
-
-section.footer{
-  z-index:400;
-}
 
 /*Footer*/
 .footer{
