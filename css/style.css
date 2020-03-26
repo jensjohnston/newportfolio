@@ -154,11 +154,6 @@ section.me{
 }
 
 
-.squares{
-  width: 10px;
-  height: 10px;
-  background-color: blue;
-}
 
 #square-like{
   background-color: var(--apostrophegold);

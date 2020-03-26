@@ -29,6 +29,32 @@ inView('section')
         section.classList.remove('in-viewport')
     })
 
+
+
+
+inView('.line-1')
+    .on('enter', section => {
+        // classList.add is the same as jQuery’s .addClass() method
+        // but the vanilla javascript version
+        section.classList.add('in-viewport')
+
+        anime({
+            targets: '.squares, .element',
+            width: '0%', // -> from '100px' to '100%',
+            easing: 'easeInOutQuad',
+            direction: 'normal',
+            duration: 2000,
+        });
+
+
+    })
+
+
+
+    .on('exit', section => {
+        section.classList.remove('in-viewport')
+    })
+
 // here we set the class to add only once we have scrolled 0.2 of 
 // our section into the viewport
 inView.threshold(0.3)
@@ -138,11 +164,5 @@ anime({
 });
 
 
-anime({
-    targets: '.squares',
-    width: '0%', // -> from '100px' to '100%',
-    easing: 'easeInOutQuad',
-    direction: 'normal',
-    duration: 3000,
-});
+
 

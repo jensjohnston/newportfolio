@@ -12,5 +12,13 @@
     .in-viewport .fade {
       opacity: 1;
     }
+
+   
+    .in-viewport .squares{
+      width: 50px;
+      height: 5px;
+      background-color: #2f2f2f;
+    }
     
-  }
+    
+}
