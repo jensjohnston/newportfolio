@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>close-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menü" transform="translate(-1343.000000, -56.000000)" fill="#474748">
+            <g id="close-icon" transform="translate(1351.500000, 65.000000) rotate(-315.000000) translate(-1351.500000, -65.000000) translate(1341.000000, 54.000000)">
+                <rect id="Rectangle" x="0" y="9.93548387" width="21" height="2.12903226"></rect>
+                <rect id="Rectangle-Copy" transform="translate(10.500000, 11.000000) rotate(-270.000000) translate(-10.500000, -11.000000) " x="0" y="9.93548387" width="21" height="2.12903226"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
