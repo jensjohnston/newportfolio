@@ -61,29 +61,24 @@ nav {
 }
 
 nav .menu-big a {
-  font-size: 65px;
-  line-height: 1.4;
-  font-family: 'lemur-light', sans-serif;
   display: block;
   margin-bottom: 15px;
-
-  transition: color 0.4s ease-in-out;
+  color: var(--almostblack);
+  font-variation-settings: "wght" 100, "wdth" 100;
+  transition:  font-variation-settings 0.2s;
 }
 
 nav .menu-big a:hover {
-  color: #474748;
+  font-variation-settings: "wght" 900, "wdth" 200;
 }
 
 .menu p {
-  font-size: 13px;
-  color: #474748;
-  font-family: 'lemur-medium', sans-serif;
+  color: var(--almostblack);
 }
 
 .menu h2 {
-  font-size: 24px;
-  color: white;
-  font-family: 'lemur-light', sans-serif;
+  color: var(--almostblack);
+  background: linear-gradient(180deg,transparent 60%,#ffff00 0);
 }
 
 .menu-big {
@@ -95,9 +90,7 @@ nav .menu-big a:hover {
 }
 
 .menu-small a {
-  font-size: 13px;
-  color: #474748;
-  font-family: 'lemur-medium', sans-serif;
+  color: var(--almostblack);
   display: inline;
 }
 
@@ -132,5 +125,9 @@ header {
 }
 
 .menu header {
-  background-color: var(--apostrophegold);
+  background-color: none;
+}
+
+.logo{
+  color: var(--apostrophegold);
 }

@@ -101,6 +101,27 @@ section.stranger{
 }
 
 
+/*------Untitled------*/
+section.untitled{
+  color: var(--apostrophegold);
+  height: 150vh;
+}
+
+
+.wade{
+  position:  fixed;
+  
+}
+
+
+
+section.untitled2{
+  position: sticky;
+  color: var(--apostrophegold);
+  height: 100vh;
+}
+
+
 
 
 /*------Me------*/
@@ -109,8 +130,8 @@ section.me{
   position: sticky;
   position: -webkit-sticky;
   top: 0;*/
-  color: var(--almostblack)
-  
+  color: var(--almostblack);
+  z-index: 1;
 }
 
 .image-jens{
@@ -177,7 +198,6 @@ section.work{
   color: var(--acnegrey);
   writing-mode: vertical-rl;
   text-orientation: sideways;
-  transform: rotate(180deg);
 }
 
 
