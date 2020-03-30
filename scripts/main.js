@@ -44,7 +44,7 @@ inView('.lines')
             width: '0%', // -> from '100px' to '100%',
             easing: 'easeInOutQuad',
             direction: 'normal',
-            duration: 2000,
+            duration: 3000,
         });
 
 
@@ -56,14 +56,37 @@ inView('.lines')
         section.classList.remove('in-viewport')
     })
 
-// here we set the class to add only once we have scrolled 0.2 of 
+// here we set the class to add only once we have scrolled 0.3 of 
 // our section into the viewport
 inView.threshold(0.3)
 
 
+inView('.waves')
+    .on('enter', section => {
+        const wavePath = document.querySelector('#wave path')
+        const waveOffset = anime.setDashoffset(wavePath)
+
+        wavePath.setAttribute('stroke-dashoffset', waveOffset)
+        anime({
+            targets: wavePath,
+            strokeDashoffset: [0, waveOffset],
+            duration: 10000,
+            loop: true,
+            direction: 'alternate',
+            easing: 'easeInOutSine',
+        });
+
+    })
 
 
-const wade = document.querySelector(".wade")
+
+    .on('exit', section => {
+        section.classList.remove('in-viewport')
+    })
+
+
+
+const fontvarationhero = document.querySelector(".fontvarationhero")
 
 window.addEventListener("scroll", function () {
     const pixels = window.pageYOffset
@@ -72,7 +95,7 @@ window.addEventListener("scroll", function () {
     const wght = 100 + pixels * 1.6
     const wdth = 100 + pixels * 0.7
 
-    wade.style.fontVariationSettings = `"wght" ${wght}, "wdth" ${wdth}`
+    fontvarationhero.style.fontVariationSettings = `"wght" ${wght}, "wdth" ${wdth}`
     /*wade.style.fontSize = Math.min(pixels * 20, 2000) + 'px'*/
 })
 
@@ -82,38 +105,12 @@ window.addEventListener("scroll", function () {
 
 
 
-// Init On DOM Load
-document.addEventListener('DOMContentLoaded', init);
-
-// Init App
-function init() {
-    const txtElement = document.querySelector('.txt-type');
-    const words = JSON.parse(txtElement.getAttribute('data-words'));
-    const wait = txtElement.getAttribute('data-wait');
-    // Init TypeWriter
-    new TypeWriter(txtElement, words, wait);
-}
 
 
-
-
-
-const wavePath = document.querySelector('#wave path')
-const waveOffset = anime.setDashoffset(wavePath)
-
-wavePath.setAttribute('stroke-dashoffset', waveOffset)
-anime({
-    targets: wavePath,
-    strokeDashoffset: [0, waveOffset],
-    duration: 10000,
-    loop: true,
-    direction: 'alternate',
-    easing: 'easeInOutSine',
-})
 
 
 anime({
-    targets: '#el',
+    targets: '#pen',
     translateY: -300,
     direction: 'alternate',
     duration: 100000,
@@ -125,7 +122,7 @@ anime({
 
 
 
-
+//--------MENU--------------
 $('.menu-open').on('click', function () {
     $('.menu').addClass('open')
     $('body').addClass('no-scroll')
