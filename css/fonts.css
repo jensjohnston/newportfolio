@@ -18,7 +18,6 @@ font-weight: normal;
 
 
     h1 {
-        font-size: 40px;
         font-family: "Bandeins";
     }
 
@@ -34,6 +33,9 @@ font-weight: normal;
         line-height: 110%;
     }
 
+    p {
+        font-family: 'UniversalSans', sans-serif;
+    }
 
 
 

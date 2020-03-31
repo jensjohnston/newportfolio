@@ -67,6 +67,10 @@ a {
   background-color: var(--almostblack);
 }
 
+.b--black{
+  border-color: var(--almostblack);
+}
+
 .bg-grey {
   background-color: var(--acnegrey);
 }
@@ -81,28 +85,31 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------Stranger------*/
-section.stranger{
-  color: var(--apostrophegold);
-  
+/*Line that regresses on in-view*/
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: var(--almostblack);
+  position: absolute;
+  top: 50px;
+  left: -50px;
 }
 
 
-/*------Untitled------*/
-section.untitled{
+
+
+
+
+
+
+
+
+
+
+/*------Hero------*/
+
+
+section.hero{
   color: var(--apostrophegold);
   height: 150vh;
 }
@@ -110,16 +117,24 @@ section.untitled{
 
 .fontvarationhero{
   position:  fixed;
-  
 }
 
 
 
-section.untitled2{
+section.hero2{
   position: sticky;
   color: var(--apostrophegold);
   height: 100vh;
 }
+
+
+.down{
+      width: 5px;
+      height: 150px;
+      background-color: var(--apostrophegold);
+    }
+
+
 
 
 
@@ -131,7 +146,7 @@ section.me{
   position: -webkit-sticky;
   top: 0;*/
   color: var(--almostblack);
-  z-index: 1;
+  transform: translate3d(0,0,0); overflow: hidden;
 }
 
 .image-jens{
@@ -146,10 +161,17 @@ section.me{
 }
 
 
+@media screen and (max-width: 600px) {
 
-#square-like{
-  background-color: var(--apostrophegold);
+    .full-image {
+      min-height: 30vh;
+      background-size: cover;
+      background-position: center;
+      top: 0;
+  }
 }
+
+
 
 
 
@@ -169,6 +191,11 @@ section.whatilike{
 }
 
 
+#square-like{
+  background-color: var(--apostrophegold);
+}
+
+
 
 /*-----What I Do-----*/
 section.whatido{
@@ -183,15 +210,20 @@ section.whatido{
   background-image: url(/assets/images/pentool.svg);
 }
 
+@media only screen and (max-width: 768px) {
+  .face{
+    display: none;
+  }
+}
+
 
 
 
 /*----Work----*/
 
 section.work{
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+  position: relative;
+
 }
 
 .work-text {
@@ -213,9 +245,11 @@ section.work{
   width: 100%;
   height: 100%;
   background: var(--darkblue);
-  opacity: .8;
+  opacity: .9;
   position: absolute;
 }
+
+
 
 
 
@@ -228,21 +262,13 @@ section.work{
 }
 
 
-
-
-
-.square {
-  width: 100px;
-  height: 100px;
-  background-color: var(--almostblack);
-  position: absolute;
-  top: 50px;
-  left: -50px;
+@media screen and (max-width: 600px) {
+  .border-bottom-mobile {
+    border-bottom: .5rem solid var(--almostblack);
+  }
 }
 
-.content {
-  position: relative;
-}
+
 
 
 /*Footer*/
@@ -258,3 +284,48 @@ section.work{
   transition:  font-variation-settings 0.2s;
 }
 
+
+
+
+
+/*WENTBENT.HTML*/
+
+section.herowentbent{
+  height: 100vh;
+}
+
+
+section.wb-images{
+height: 100vh;
+background-size: 40vmax auto;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+section.image1{
+ background-image: url(/assets/images/momo.jpg);
+ color: var(--acnegrey);
+ background-color: #000000;
+}
+
+
+section.image2{
+  background-image: url(/assets/images/wentbent/leo.jpg);
+  color: var(--almostblack);
+  background-color: var(--acnegrey);
+ }
+
+
+
+ section.image3{
+  background-image: url(/assets/images/wentbent/silvia.jpg);
+  color: var(--acnegrey);
+  background-color: #000000;
+ }
+
+
+ section.image4{
+  background-image: url(/assets/images/wentbent/wavy.jpg);
+  color: var(--almostblack);
+  background-color: var(--acnegrey);
+ }
