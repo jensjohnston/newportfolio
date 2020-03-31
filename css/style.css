@@ -136,6 +136,21 @@ section.hero2{
 
 
 
+    @media screen and (max-width: 600px) {
+
+      section.hero
+      {
+        display:none;
+    }
+
+    section.hero2 {
+      display:none;
+    }
+  }
+
+  
+  
+
 
 
 
@@ -164,7 +179,7 @@ section.me{
 @media screen and (max-width: 600px) {
 
     .full-image {
-      min-height: 30vh;
+      min-height: 70vh;
       background-size: cover;
       background-position: center;
       top: 0;
