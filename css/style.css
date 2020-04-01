@@ -252,7 +252,7 @@ section.whatido{
 
 section.work{
   position: absolute;
-
+  z-index:2;
 }
 
 .work-text {

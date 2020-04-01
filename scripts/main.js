@@ -1,5 +1,5 @@
 const runScripts = () => {
-
+    /*
     const h1 = document.querySelector(".logo-jens")
 
     window.addEventListener("scroll", function () {
@@ -8,9 +8,13 @@ const runScripts = () => {
         const wght = 100 + pixels * 0.4
         const wdth = 100 + pixels * 0.1
 
-        h1.style.fontVariationSettings = `"wght" ${wght}, "wdth" ${wdth}`
-    })
 
+
+        if (h1) {
+            h1.style.fontVariationSettings = `"wght" ${wght}, "wdth" ${wdth}`
+        }
+    })
+*/
 
 
 
@@ -98,8 +102,10 @@ const runScripts = () => {
         const wght = 100 + pixels * 1.6
         const wdth = 100 + pixels * 0.7
 
-        fontvarationhero.style.fontVariationSettings = `"wght" ${wght}, "wdth" ${wdth}`
-        /*wade.style.fontSize = Math.min(pixels * 20, 2000) + 'px'*/
+        if (fontvarationhero) {
+            fontvarationhero.style.fontVariationSettings = `"wght" ${wght}, "wdth" ${wdth}`
+        }
+
     })
 
 
@@ -234,11 +240,9 @@ barba.init({
     debug: true,
     transitions: [
         {
-            name: "next",
-            custom({ current, next, trigger }) {
-                return trigger.classList && trigger.classList.contains("next")
-            },
+
             leave({ current, next, trigger }) {
+                runScripts()
                 return new Promise(resolve => {
                     const timeline = gsap.timeline({
                         defaults: {
@@ -257,7 +261,7 @@ barba.init({
                         .set(wiper, { x: "-100%" })
                         .set(wiperText, { y: "100%" })
                         .to(navigation, { opacity: 0 }, 0)
-                        .fromTo(sectionbarba, { x: 0, opacity: 1 }, { x: 500, opacity: 0 }, 0)
+                        .to(sectionbarba, { x: 0, opacity: 1 }, { x: 500, opacity: 0 }, 0)
                         .to(wiper, { x: 0 })
                 })
             },
@@ -266,8 +270,8 @@ barba.init({
                 wiperText.innerHTML = next.container.getAttribute("data-title")
 
                 window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
+                    top: 0
+
                 })
 
 
@@ -286,10 +290,10 @@ barba.init({
             },
 
             enter({ current, next, trigger }) {
-                runScripts()
                 return new Promise(resolve => {
                     const timeline = gsap.timeline({
                         onComplete() {
+                            runScripts()
                             resolve()
                         }
                     })
