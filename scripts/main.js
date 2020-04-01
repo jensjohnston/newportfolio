@@ -1,3 +1,5 @@
+
+
 const h1 = document.querySelector(".logo-jens")
 
 window.addEventListener("scroll", function () {
@@ -8,7 +10,6 @@ window.addEventListener("scroll", function () {
 
     h1.style.fontVariationSettings = `"wght" ${wght}, "wdth" ${wdth}`
 })
-
 
 
 
@@ -31,7 +32,7 @@ inView('section')
 
 
 
-
+/*
 inView('.lines')
     .on('enter', section => {
         // classList.add is the same as jQuery’s .addClass() method
@@ -54,13 +55,13 @@ inView('.lines')
 
     .on('exit', section => {
         section.classList.remove('in-viewport')
-    })
+    })*/
 
 // here we set the class to add only once we have scrolled 0.3 of 
 // our section into the viewport
 inView.threshold(0.3)
 
-
+//Pen-line animation
 inView('.waves')
     .on('enter', section => {
         const wavePath = document.querySelector('#wave path')
@@ -86,6 +87,8 @@ inView('.waves')
 
 
 
+
+//Font "hello Stranger"
 const fontvarationhero = document.querySelector(".fontvarationhero")
 
 window.addEventListener("scroll", function () {
@@ -103,12 +106,7 @@ window.addEventListener("scroll", function () {
 
 
 
-
-
-
-
-
-
+//Pen-rotation
 anime({
     targets: '#pen',
     translateY: -300,

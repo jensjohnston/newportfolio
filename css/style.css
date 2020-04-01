@@ -22,34 +22,32 @@ a {
 
 
 
-/*----Borders----*/
-
-.frame {
-  border: 16px solid var(--almostblack);
+/*Barba*/
+div.wiper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--apostrophegold);
+  z-index: 2;
+  transform: translate(-100%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.border-bottom {
-  border-bottom: 16px solid var(--almostblack);
+.wiper div {
+  height: 90px;
+  overflow: hidden;
+  position: relative;
 }
 
-.border-top{
-  border-top: 16px solid var(--almostblack);
-}
 
-.border-right {
-  border-right: 8px solid var(--almostblack);
-}
-
-.border-left {
-  border-left: 8px solid var(--almostblack);
-}
-
-.border-right16 {
-  border-right: 16px solid var(--almostblack);
-}
-
-.border-left16 {
-  border-left: 16px solid var(--almostblack);
+.wiper h2 {
+  height: 90px;
+  margin-top: 10px;
+  transform: translate(0, 100%);
 }
 
 
@@ -175,6 +173,13 @@ section.me{
   top: 0; 
 }
 
+.full-image-work{
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  top: 0; 
+}
+
 
 @media screen and (max-width: 600px) {
 
@@ -184,6 +189,16 @@ section.me{
       background-position: center;
       top: 0;
   }
+}
+
+@media screen and (max-width: 600px) {
+
+  .full-image-work {
+    min-height: 30vh;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+}
 }
 
 
@@ -237,7 +252,7 @@ section.whatido{
 /*----Work----*/
 
 section.work{
-  position: relative;
+  position: absolute;
 
 }
 
@@ -320,14 +335,14 @@ background-attachment: fixed;
 section.image1{
  background-image: url(/assets/images/momo.jpg);
  color: var(--acnegrey);
- background-color: #000000;
+ background-color: #2E495C;
 }
 
 
 section.image2{
   background-image: url(/assets/images/wentbent/leo.jpg);
   color: var(--almostblack);
-  background-color: var(--acnegrey);
+  background-color: #829389;
  }
 
 
@@ -335,12 +350,12 @@ section.image2{
  section.image3{
   background-image: url(/assets/images/wentbent/silvia.jpg);
   color: var(--acnegrey);
-  background-color: #000000;
+  background-color: #BEBEBE;
  }
 
 
  section.image4{
   background-image: url(/assets/images/wentbent/wavy.jpg);
   color: var(--almostblack);
-  background-color: var(--acnegrey);
+  background-color: #FED336;
  }

@@ -99,14 +99,14 @@ a {
   color: #fff;
 }
 
-main {
+/*main {
   width: 100%;
   position: relative;
   z-index: 1;
   padding-top: 80px;
   padding-bottom: 545px;
   pointer-events: none;
-}
+}*/
 
 header {
   width: 100%;
