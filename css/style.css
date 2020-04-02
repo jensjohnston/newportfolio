@@ -1,5 +1,5 @@
 :root {
-  --latchblue: #dadce7;
+  --latchblue: #606060;
   --apostrophegold: #b6a066;
   --almostblack: #2F2F2F;
   --acnegrey: #EEEEEE;
@@ -108,12 +108,12 @@ div.wiper {
 
 section.hero{
   color: var(--apostrophegold);
-  height: 150vh;
+  height: 140vh;
 }
 
 
 .fontvarationhero{
-  position:  fixed;
+ display: inline;
 }
 
 
@@ -158,12 +158,12 @@ section.me{
   position: -webkit-sticky;
   top: 0;*/
   color: var(--almostblack);
-  transform: translate3d(0,0,0); overflow: hidden;
 }
 
 .image-jens{
   background-image: url(/assets/images/jens.jpg);
 }
+
 
 .full-image{
   min-height: 70vh;
@@ -178,6 +178,7 @@ section.me{
   background-position: center;
   top: 0; 
 }
+
 
 
 @media screen and (max-width: 600px) {
@@ -224,7 +225,18 @@ section.whatilike{
   background-color: var(--apostrophegold);
 }
 
+.full-image-mcd{
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  top: 0; 
+}
 
+
+.image-mcdonalds{
+background-image: url(/assets/images/whatilike.svg);
+position: relative;
+}
 
 /*-----What I Do-----*/
 section.whatido{
@@ -358,3 +370,10 @@ section.image2{
   color: var(--almostblack);
   background-color: #FED336;
  }
+
+ @media (max-width: 700px) {
+  section.wb-images {
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}

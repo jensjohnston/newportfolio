@@ -92,6 +92,7 @@ const runScripts = () => {
 
 
 
+
     //Font "hello Stranger"
     const fontvarationhero = document.querySelector(".fontvarationhero")
 
@@ -242,13 +243,13 @@ barba.init({
         {
 
             leave({ current, next, trigger }) {
-                runScripts()
                 return new Promise(resolve => {
                     const timeline = gsap.timeline({
                         defaults: {
                             duration: 1
                         },
                         onComplete() {
+                            runScripts()
                             current.container.remove()
                             resolve()
                         }
@@ -261,7 +262,7 @@ barba.init({
                         .set(wiper, { x: "-100%" })
                         .set(wiperText, { y: "100%" })
                         .to(navigation, { opacity: 0 }, 0)
-                        .to(sectionbarba, { x: 0, opacity: 1 }, { x: 500, opacity: 0 }, 0)
+                        .to(sectionbarba, { x: 0, opacity: 0 }, { x: 500, opacity: 0 }, 0)
                         .to(wiper, { x: 0 })
                 })
             },
@@ -312,6 +313,7 @@ barba.init({
 
                 })
             }
+
         }
     ],
     views: []
