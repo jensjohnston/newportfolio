@@ -1,8 +1,8 @@
 :root {
-  --latchblue: #606060;
+  --latchblue: #EDEEF3;
   --apostrophegold: #b6a066;
   --almostblack: #2F2F2F;
-  --acnegrey: #EEEEEE;
+  --acnegrey: #EEE;
   --darkblue: #1C1E27;
 }
 
@@ -82,15 +82,6 @@ div.wiper {
 
 
 
-/*Line that regresses on in-view*/
-.square {
-  width: 100px;
-  height: 100px;
-  background-color: var(--almostblack);
-  position: absolute;
-  top: 50px;
-  left: -50px;
-}
 
 
 
@@ -153,10 +144,7 @@ section.hero2{
 
 /*------Me------*/
 section.me{
-  /*
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;*/
+  
   color: var(--almostblack);
 }
 
@@ -179,6 +167,41 @@ section.me{
   top: 0; 
 }
 
+.content {
+  position: relative;
+}
+
+div.hand {
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  z-index: 3;
+}
+
+div.circle {
+  position: absolute;
+  width: 1000px;
+  height: 100vh;
+  top: 0;
+  left: -50%;
+  transform: translateY(-40%);
+}
+
+
+
+
+section.me div.circle {
+  background-color: var(--acnegrey);
+}
+
+.imageofjens{
+  position: relative;
+}
+
+.text-me{
+  width: 150%;
+  z-index:2;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -216,7 +239,7 @@ section.whatilike{
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  color: var(--apostrophegold);
+  color: var(--acnegrey);
   
 }
 
@@ -237,6 +260,18 @@ section.whatilike{
 background-image: url(/assets/images/whatilike.svg);
 position: relative;
 }
+
+
+.hero-manifesto .manifesto-headline {
+  background-repeat: no-repeat;
+  background-image: url(/assets/images/text-manifesto.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
 
 /*-----What I Do-----*/
 section.whatido{
@@ -374,5 +409,17 @@ section.image2{
  @media (max-width: 700px) {
   section.wb-images {
     background-attachment: scroll;
+    background-size: 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+

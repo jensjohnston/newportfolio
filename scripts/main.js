@@ -16,6 +16,12 @@ const runScripts = () => {
     })
 */
 
+    /*
+     * This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. 
+     * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/.
+     * Copyright (c) 2016 Julian Garnier
+     */
+
 
 
 
@@ -34,32 +40,6 @@ const runScripts = () => {
             section.classList.remove('in-viewport')
         })
 
-
-
-    /*
-    inView('.lines')
-        .on('enter', section => {
-            // classList.add is the same as jQuery’s .addClass() method
-            // but the vanilla javascript version
-            const targets = section.querySelectorAll(".line1, .line2, .line3")
-            section.classList.add('in-viewport')
-    
-            anime({
-                targets: targets,
-                width: '0%', // -> from '100px' to '100%',
-                easing: 'easeInOutQuad',
-                direction: 'normal',
-                duration: 3000,
-            });
-    
-    
-        })
-    
-    
-    
-        .on('exit', section => {
-            section.classList.remove('in-viewport')
-        })*/
 
     // here we set the class to add only once we have scrolled 0.3 of 
     // our section into the viewport
@@ -112,8 +92,6 @@ const runScripts = () => {
 
 
 
-
-    //Pen-rotation
     anime({
         targets: '#pen',
         translateY: -300,
@@ -124,6 +102,7 @@ const runScripts = () => {
         rotate: '1turn',
         complete: 'randomValues'
     });
+
 
 
 
@@ -215,6 +194,28 @@ const runScripts = () => {
 
 
 }
+
+const sections = document.querySelectorAll('section')
+document.addEventListener('scroll', function () {
+    const topViewport = window.pageYOffset
+    const midViewport = topViewport + (window.innerHeight / 2)
+
+    sections.forEach(section => {
+        const midSection = section.offsetTop + (section.offsetHeight / 2)
+        const distanceToSection = midViewport - midSection
+
+        const parallaxTags = section.querySelectorAll('[data-parallax]')
+
+        parallaxTags.forEach(tag => {
+            const ratio = parseFloat(tag.getAttribute('data-parallax'))
+            const weightedDistance = distanceToSection * ratio
+
+            tag.style.transform = `translate(0, ${weightedDistance}px)`
+        })
+    })
+})
+
+
 
 runScripts()
 
