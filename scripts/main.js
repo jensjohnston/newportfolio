@@ -1,29 +1,22 @@
 const runScripts = () => {
-    /*
-    const h1 = document.querySelector(".logo-jens")
-
-    window.addEventListener("scroll", function () {
-        const pixels = window.pageYOffset
-
-        const wght = 100 + pixels * 0.4
-        const wdth = 100 + pixels * 0.1
 
 
+    const imageHolders = document.querySelectorAll(".image-up")
 
-        if (h1) {
-            h1.style.fontVariationSettings = `"wght" ${wght}, "wdth" ${wdth}`
-        }
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > 0.1) {
+                entry.target.classList.add("loaded")
+            }
+        })
+    }, {
+        threshold: [0, 0.1, 1]
     })
-*/
 
-    /*
-     * This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. 
-     * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/.
-     * Copyright (c) 2016 Julian Garnier
-     */
-
-
-
+    imageHolders.forEach(holder => {
+        observer.observe(holder)
+    })
 
 
     inView('section')
@@ -91,20 +84,6 @@ const runScripts = () => {
     })
 
 
-    /*
-    anime({
-        targets: '.tennis-ball',
-        translateY: -300,
-        translateX: -600,
-        direction: 'alternate',
-        duration: 10000,
-        loop: true,
-        easing: 'linear',
-        rotate: '1turn',
-        complete: 'randomValues'
-    });*/
-
-
     anime({
         targets: '#pen',
         translateY: -300,
@@ -115,6 +94,9 @@ const runScripts = () => {
         rotate: '1turn',
         complete: 'randomValues'
     });
+
+
+
 
 
 

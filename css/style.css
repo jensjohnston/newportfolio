@@ -235,10 +235,10 @@ section.me div.circle {
 
 /*-----What I like-----*/
 section.whatilike{
-  
+  /*
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: 0;*/
   color: var(--almostblack);
   
 }
@@ -259,21 +259,25 @@ position: relative;
 }
 
 
+
 .image-tennis{
 background-image: url(/assets/images/tennis-background.svg);
 
 }
 
-
-.hero-manifesto .manifesto-headline {
-  background-repeat: no-repeat;
-  background-image: url(/assets/images/text-manifesto.jpg);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+.image-up {
+  overflow: hidden;
 }
 
+.image-up svg {
+  transition: transform 2s 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+
+  transform: translate(0, 120%);
+}
+
+.image-up.loaded svg {
+  transform: translate(0, 0);
+}
 
 
 /*-----What I Do-----*/
