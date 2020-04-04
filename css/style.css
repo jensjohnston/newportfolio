@@ -154,7 +154,7 @@ section.me{
 
 
 .full-image{
-  min-height: 70vh;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
   top: 0; 
@@ -239,26 +239,29 @@ section.whatilike{
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  color: var(--acnegrey);
+  color: var(--almostblack);
   
 }
 
 
-#square-like{
-  background-color: var(--apostrophegold);
-}
 
-.full-image-mcd{
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  top: 0; 
+div.thumbs-up {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: 3;
 }
 
 
-.image-mcdonalds{
-background-image: url(/assets/images/whatilike.svg);
+div.tennis-ball {
 position: relative;
+
+}
+
+
+.image-tennis{
+background-image: url(/assets/images/tennis-background.svg);
+
 }
 
 

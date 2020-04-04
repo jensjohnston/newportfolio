@@ -64,10 +64,11 @@ const runScripts = () => {
         })
 
 
-
         .on('exit', section => {
             section.classList.remove('in-viewport')
         })
+
+
 
 
 
@@ -90,6 +91,18 @@ const runScripts = () => {
     })
 
 
+    /*
+    anime({
+        targets: '.tennis-ball',
+        translateY: -300,
+        translateX: -600,
+        direction: 'alternate',
+        duration: 10000,
+        loop: true,
+        easing: 'linear',
+        rotate: '1turn',
+        complete: 'randomValues'
+    });*/
 
 
     anime({
