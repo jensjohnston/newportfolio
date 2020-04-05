@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'UniversalSans', sans-serif;
+  font-family: 'Bandeinssans', sans-serif;
   font-size: 18px;
   line-height: 1.5;
   color: #414141;
@@ -68,6 +68,11 @@ div.wiper {
   border-color: var(--almostblack);
 }
 
+/*
+.b--grey{
+  border-color: var(--acnegrey)
+}*/
+
 .bg-grey {
   background-color: var(--acnegrey);
 }
@@ -124,17 +129,7 @@ section.hero2{
 
 
 
-    @media screen and (max-width: 600px) {
 
-      section.hero
-      {
-        display:none;
-    }
-
-    section.hero2 {
-      display:none;
-    }
-  }
 
   
   
@@ -204,25 +199,6 @@ section.me div.circle {
 }
 
 
-@media screen and (max-width: 600px) {
-
-    .full-image {
-      min-height: 70vh;
-      background-size: cover;
-      background-position: center;
-      top: 0;
-  }
-}
-
-@media screen and (max-width: 600px) {
-
-  .full-image-work {
-    min-height: 30vh;
-    background-size: cover;
-    background-position: center;
-    top: 0;
-}
-}
 
 
 
@@ -293,11 +269,95 @@ section.whatido{
   background-image: url(/assets/images/pentool.svg);
 }
 
-@media only screen and (max-width: 768px) {
+
+/*
+.ruler-line {
+  position: absolute;
+  background-color: var(--almostblack);
+  width: 1px;
+  height: 100%;
+  transform: rotate(180deg);
+}*/
+
+
+
+@media only screen and (max-width: 600px) {
   .face{
     display: none;
   }
+
+
+  /*Section ME*/
+
+    section.hero
+    {
+      display:none;
+  }
+
+  section.hero2 {
+    display:none;
+  }
+
+  div.circle{
+    display: none;
+  }
+
+  .text-me{
+    width: 100%;
+  }
+
+  
+div.me{
+  display: flex;
+  flex-direction: column; 
+  flex-direction: column-reverse;
+  min-height: 50vh;
 }
+
+.imageofjens{
+  padding: 64px 0px 64px 0px;
+}
+
+
+  /*Section What I Like*/
+  .tennis-ball{
+    display: none;
+  }
+
+    .full-image {
+      min-height: 70vh;
+      background-size: cover;
+      background-position: center;
+      top: 0;
+  }
+
+
+
+  /*Section WORK*/
+  .border-bottom-mobile {
+    border-bottom: .125rem solid #777777;
+  }
+
+  .full-image-work {
+    min-height: 30vh;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+}
+
+
+  /*Went Bent-page*/
+  section.wb-images {
+    background-attachment: scroll;
+    background-size: 100%;
+  }
+}
+
+
+
+
+
+
 
 
 
@@ -345,11 +405,6 @@ section.work{
 }
 
 
-@media screen and (max-width: 600px) {
-  .border-bottom-mobile {
-    border-bottom: .5rem solid var(--almostblack);
-  }
-}
 
 
 
@@ -413,12 +468,6 @@ section.image2{
   background-color: #FED336;
  }
 
- @media (max-width: 700px) {
-  section.wb-images {
-    background-attachment: scroll;
-    background-size: 100%;
-  }
-}
 
 
 

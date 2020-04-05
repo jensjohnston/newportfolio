@@ -74,7 +74,7 @@ const runScripts = () => {
         const pixels = window.pageYOffset
 
 
-        const wght = 100 + pixels * 1.6
+        const wght = 100 + pixels * 2
         const wdth = 100 + pixels * 0.7
 
         if (fontvarationhero) {
