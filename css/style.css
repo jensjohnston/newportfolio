@@ -1,5 +1,5 @@
 :root {
-  --latchblue: #EDEEF3;
+  --latchblue: #DADCE7;
   --apostrophegold: #b6a066;
   --almostblack: #2F2F2F;
   --acnegrey: #EEE;
@@ -149,6 +149,13 @@ section.me{
 
 
 .full-image{
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  top: 0; 
+}
+
+.full-image-tennis{
   min-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -321,7 +328,7 @@ div.me{
 
   /*Section What I Like*/
   .tennis-ball{
-    display: none;
+    
   }
 
     .full-image {
@@ -331,6 +338,21 @@ div.me{
       top: 0;
   }
 
+
+  .full-image-tennis{
+    min-height: 50vh;
+  }
+
+  .image-tennis{
+    background-image: none;
+  }
+
+  div.me{
+    display: flex;
+    flex-direction: column; 
+    flex-direction: column-reverse;
+    min-height: 50vh;
+  }
 
 
   /*Section WORK*/
@@ -352,6 +374,8 @@ div.me{
     background-size: 100%;
   }
 }
+
+
 
 
 
