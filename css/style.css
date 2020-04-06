@@ -223,6 +223,7 @@ section.whatilike{
   position: -webkit-sticky;
   top: 0;*/
   color: var(--almostblack);
+ 
   
 }
 
@@ -266,10 +267,11 @@ background-image: url(/assets/images/tennis-background.svg);
 /*-----What I Do-----*/
 section.whatido{
   
-  position: sticky;
+  /*position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: 0;*/
   color: var(--almostblack);
+  background-image: linear-gradient(180deg, #DADCE7, rgba(238, 238, 238, 1));
 }
 
 .image-pen{
@@ -277,14 +279,8 @@ section.whatido{
 }
 
 
-/*
-.ruler-line {
-  position: absolute;
-  background-color: var(--almostblack);
-  width: 1px;
-  height: 100%;
-  transform: rotate(180deg);
-}*/
+
+
 
 
 
@@ -377,11 +373,9 @@ div.me{
 
 
 
-
-
-
-
-
+.line-ruler{
+  
+}
 
 
 
@@ -491,7 +485,6 @@ section.image2{
   color: var(--almostblack);
   background-color: #FED336;
  }
-
 
 
 

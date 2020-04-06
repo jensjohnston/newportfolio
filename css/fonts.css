@@ -19,10 +19,31 @@ font-weight: normal;
     @font-face {
         font-family: Bandeinssans;
         src: url(/assets/fonts/BandeinsSansVariableGX.ttf);
+        font-weight: normal;
     }
     
 
-    
+    @font-face {
+        font-family: Bandeinssans;
+        src: url(/assets/fonts/BandeinsSansVariableGX.ttf);
+        font-weight: 700;
+    }
+
+    @keyframes animate-type {
+        0% { 
+            font-variation-settings: "wght" 400, "wdth" 0, "slnt" 0;
+          letter-spacing: 0em;
+        }
+        100% {
+          font-variation-settings: "wght" 900, "wdth" 900, "slnt" -10;
+          letter-spacing: 0.1em;
+        }
+      }
+
+      .header-type{
+        font-variation-settings: "wght" 400;
+        animation: animate-type 3s infinite alternate;
+      }
 
 
     h1 {
