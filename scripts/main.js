@@ -96,6 +96,18 @@ const runScripts = () => {
     });
 
 
+    const arrowPath = document.querySelector('#arrow path')
+    const arrowOffset = anime.setDashoffset(arrowPath)
+
+    arrowPath.setAttribute('stroke-dashoffset', arrowOffset)
+    anime({
+        targets: arrowPath,
+        strokeDashoffset: [0, arrowOffset],
+        duration: 3000,
+        direction: 'normal',
+        easing: 'easeInOutSine',
+    });
+
 
 
 
@@ -207,6 +219,7 @@ const runScripts = () => {
             })
         })
     })
+
 
 
 
