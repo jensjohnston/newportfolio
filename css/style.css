@@ -263,6 +263,17 @@ background-image: url(/assets/images/tennis-background.svg);
   transform: translate(0, 0);
 }
 
+.image-up img {
+  transition: transform 2s 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+
+  transform: translate(0, 120%);
+}
+
+.image-up.loaded img {
+  transform: translate(0, 0);
+}
+
+
 
 /*-----What I Do-----*/
 section.whatido{
@@ -458,17 +469,38 @@ background-position: center center;
 background-repeat: no-repeat;
 background-attachment: fixed;
 }
+
+section.image-bent1{
+  background-image: url(/assets/images/wentbent/grey-bent.jpg);
+  color: var(--acnegrey);
+  background-color: #E9E9E9;
+ }
+
+ section.image-bent2{
+  background-image: url(/assets/images/wentbent/grey-bent2.jpg);
+  color: var(--acnegrey);
+  background-color: #E9E9E9;
+ }
+
+ section.image-bent3{
+  background-image: url(/assets/images/wentbent/grey-bent3.jpg);
+  color: var(--acnegrey);
+  background-color: #E9E9E9;
+ }
+
+
+
 section.image1{
  background-image: url(/assets/images/momo.jpg);
  color: var(--acnegrey);
- background-color: #2E495C;
+ background-color: #fff;
 }
 
 
 section.image2{
   background-image: url(/assets/images/wentbent/leo.jpg);
   color: var(--almostblack);
-  background-color: #829389;
+  background-color: #fff;
  }
 
 
@@ -476,14 +508,45 @@ section.image2{
  section.image3{
   background-image: url(/assets/images/wentbent/silvia.jpg);
   color: var(--acnegrey);
-  background-color: #BEBEBE;
+  background-color: #fff;
  }
 
 
  section.image4{
   background-image: url(/assets/images/wentbent/wavy.jpg);
   color: var(--almostblack);
-  background-color: #FED336;
+  background-color: #fff;
+ }
+
+ section.image5{
+  background-image: url(/assets/images/wentbent/silvia-2.jpg);
+  color: var(--almostblack);
+  background-color: #fff;
+ }
+
+
+ section.image6{
+  background-image: url(/assets/images/wentbent/Noah.jpg);
+  color: var(--almostblack);
+  background-color: #fff;
+ }
+
+
+
+
+
+
+ section.package1{
+  background-image: url(/assets/images/wentbent/box-fin-Recovered.jpg);
+  color: var(--almostblack);
+  background-color: #fff;
+ }
+
+
+ section.package2{
+  background-image: url(/assets/images/wentbent/forpackning.jpg);
+  color: var(--almostblack);
+  background-color: #fff;
  }
 
 
