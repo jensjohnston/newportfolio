@@ -422,7 +422,7 @@ section.work{
   width: 100%;
   height: 100%;
   background: var(--darkblue);
-  opacity: .7;
+  opacity: .8;
   position: absolute;
 }
 
@@ -474,6 +474,23 @@ background-position: center center;
 background-repeat: no-repeat;
 background-attachment: fixed;
 }
+
+
+  @media screen and (max-width: 30em) {
+    .no-mobile {
+      display:none;
+  }
+  }
+
+  @media screen and (min-width: 30em) {
+    .no-desktop {
+      display:none;
+  }
+  }
+
+
+
+
 
 section.image-bent1{
   background-image: url(/assets/images/wentbent/grey-bent.jpg);
@@ -602,5 +619,103 @@ section.image2{
 
 
 
+
+/*DANIELWELLINGTON.HTML*/
+section.cards {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+section.cards {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 365px;
+  height: 500px;
+  position: relative;
+  perspective: 1600px;
+}
+
+
+.card img, .card div {
+  backface-visibility: hidden;
+  transition: transform 2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+}
+
+.card:hover img {
+  transform: rotateY(180deg);
+}
+
+
+.card div{
+  background-color: #fff;
+  background-image: url(/assets/images/Danielwellington/dw.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
+  
+  
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 365px;
+  height: 500px;
+  z-index: 1;
+
+  padding: 30px;
+  font-size: 48px;
+  z-index: 1;
+
+  transform: rotateY(180deg);
+
+  box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+}
+
+.card div.profile-picture img {
+  fill: currentColor;
+}
+
+.card:hover div {
+  transform: rotateY(360deg);
+}
+
+
+#dw-side {
+  background-color: rgba(0, 14, 34, 1.0);
+}
+
+@media (max-width: 640px) {
+
+  section.cards {
+      padding: 30px;
+      min-height: 60vh;
+  }
+
+
+  .card div{
+      display:none;
+  }
+
+
+  .card:hover img {
+      transform: rotateY(0deg);
+  }
+
+  .card:hover div {
+      transform: rotateY(0deg);
+  }
+  
+}
 
 

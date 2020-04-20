@@ -55,6 +55,12 @@ font-weight: normal;
         font-size: 3rem;
     }
 
+    @media screen and (max-width: 30em) {
+      h2 {
+        font-size: 1.25rem;
+    }
+    }
+
     div.bandeinssans{
       font-family: Bandeinssans;
     }
