@@ -377,15 +377,10 @@ div.me{
 
   /*Went Bent-page*/
   section.wb-images {
-    background-attachment: scroll;
-    background-size: 100%;
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    min-height: fit-content !important;
   }
-}
-
-
-
-.line-ruler{
-  
 }
 
 
@@ -405,11 +400,21 @@ section.work{
 }
 
 
+.image-wentbent {
+  background-image: url(/assets/images/momo.jpg);
+  position: relative;
+}
 
 
 
 .image-åwl {
-  background-image: url(/assets/images/momo.jpg);
+  background-image: url(/assets/images/AWL/bznzcard.jpg);
+  position: relative;
+}
+
+
+.image-danielwellington {
+  background-image: url(/assets/images/Danielwellington/socialmedia-work.jpg);
   position: relative;
 }
 
@@ -417,7 +422,7 @@ section.work{
   width: 100%;
   height: 100%;
   background: var(--darkblue);
-  opacity: .9;
+  opacity: .7;
   position: absolute;
 }
 
@@ -463,7 +468,7 @@ section.herowentbent{
 
 
 section.wb-images{
-height: 100vh;
+min-height: 100vh;
 background-size: 40vmax auto;
 background-position: center center;
 background-repeat: no-repeat;
@@ -530,6 +535,46 @@ section.image2{
   color: var(--almostblack);
   background-color: #fff;
  }
+
+
+ /*Fun art direction + copywriting*/
+ section.image7{
+  background-image: url(/assets/images/wentbent/foodora.jpg);
+  color: var(--almostblack);
+  background-color: #fff;
+ }
+
+
+ section.image8{
+  background-image: url(/assets/images/wentbent/kodis.jpg);
+  color: var(--almostblack);
+  background-color: #fff;
+ }
+
+
+ 
+ section.image9{
+  background-image: url(/assets/images/wentbent/drivethru.jpg);
+  color: var(--almostblack);
+  background-color: #fff;
+ }
+
+
+  
+ section.image10{
+  background-image: url(/assets/images/wentbent/mcd1.jpg);
+  color: var(--almostblack);
+  background-color: #fff;
+ }
+
+
+ section.image11{
+  background-image: url(/assets/images/wentbent/nils.jpg);
+  color: var(--almostblack);
+  background-color: #fff;
+ }
+
+
 
 
 
