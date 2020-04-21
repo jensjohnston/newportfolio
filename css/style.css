@@ -367,6 +367,11 @@ div.me{
     border-bottom: .125rem solid #2F2F2F;
   }
 
+  .border-bottom-mobile-light {
+    border-bottom: .125rem solid #777;
+  }
+
+
   .full-image-work {
     min-height: 30vh;
     background-size: cover;
@@ -389,7 +394,7 @@ div.me{
 /*----Work----*/
 
 section.work{
-  position: absolute;
+  /*position: absolute;*/
   z-index:2;
 }
 
@@ -447,7 +452,7 @@ section.work{
 
 /*Footer*/
 .footer{
-  background: linear-gradient(180deg,transparent 40%,#ffff00 0);
+  background: linear-gradient(180deg,transparent 65%,#ffff00 0);
   color: var(--almostblack);
   font-variation-settings: "wght" 100, "wdth" 100;
   transition:  font-variation-settings 0.2s;
@@ -700,13 +705,20 @@ section.cards {
 @media (max-width: 640px) {
 
   section.cards {
-      padding: 30px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
       min-height: 60vh;
   }
 
 
   .card div{
       display:none;
+  }
+
+  .card {
+    height: 100%;
   }
 
 

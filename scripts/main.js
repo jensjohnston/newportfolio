@@ -1,6 +1,116 @@
 const runScripts = () => {
 
 
+
+    //--------MENU--------------
+    $('.menu-open').on('click', function () {
+        $('.menu').addClass('open')
+        $('body').addClass('no-scroll')
+        /* $('.top').addClass('hide')*/
+
+        return false
+    })
+
+    $('.menu-close').on('click', function () {
+        $('.menu').removeClass('open')
+        $('body').removeClass('no-scroll')
+        /* $('.top').removeClass('hide') */
+
+        return false
+    })
+
+    //smooth scroll
+
+    // grab all the anchor tags on the page
+    const anchors = document.querySelectorAll('a')
+    // loop over them
+    anchors.forEach(anchor => {
+        // listen for clicks on each one
+        anchor.addEventListener('click', event => {
+            // grab the href attribute
+            const href = anchor.getAttribute('href')
+            // if the href starts with a #
+            if (href.charAt(0) === '#') {
+                // stop the default action
+                event.preventDefault()
+                // find the element the href points to and scroll it into view
+                document.querySelector(href).scrollIntoView({
+                    behavior: 'smooth'
+                })
+            }
+        })
+    })
+
+
+    // Hide Header on on scroll down
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('header').outerHeight();
+
+    $(window).scroll(function (event) {
+        didScroll = true;
+    });
+
+    setInterval(function () {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        // Make sure they scroll more than delta
+        if (Math.abs(lastScrollTop - st) <= delta)
+            return;
+
+        // If they scrolled down and are past the navbar, add class .nav-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        if (st > lastScrollTop && st > navbarHeight) {
+            // Scroll Down
+            $('header').removeClass('nav-down').addClass('nav-up');
+        } else {
+            // Scroll Up
+            if (st + $(window).height() < $(document).height()) {
+                $('header').removeClass('nav-up').addClass('nav-down');
+            }
+        }
+
+        lastScrollTop = st;
+    }
+
+    //scroll to top
+
+    $("a[href='#top']").on("click", function () {
+        document.body.scrollIntoView({ block: "start", behavior: "smooth" })
+        return false
+    })
+
+
+    const sections = document.querySelectorAll('section')
+    document.addEventListener('scroll', function () {
+        const topViewport = window.pageYOffset
+        const midViewport = topViewport + (window.innerHeight / 2)
+
+        sections.forEach(section => {
+            const midSection = section.offsetTop + (section.offsetHeight / 2)
+            const distanceToSection = midViewport - midSection
+
+            const parallaxTags = section.querySelectorAll('[data-parallax]')
+
+            parallaxTags.forEach(tag => {
+                const ratio = parseFloat(tag.getAttribute('data-parallax'))
+                const weightedDistance = distanceToSection * ratio
+
+                tag.style.transform = `translate(0, ${weightedDistance}px)`
+            })
+        })
+    })
+
+
+
     const imageHolders = document.querySelectorAll(".image-up")
 
 
@@ -113,117 +223,6 @@ const runScripts = () => {
 
 
 
-    //--------MENU--------------
-    $('.menu-open').on('click', function () {
-        $('.menu').addClass('open')
-        $('body').addClass('no-scroll')
-        /* $('.top').addClass('hide')*/
-
-        return false
-    })
-
-    $('.menu-close').on('click', function () {
-        $('.menu').removeClass('open')
-        $('body').removeClass('no-scroll')
-        /* $('.top').removeClass('hide') */
-
-        return false
-    })
-
-    //smooth scroll
-
-    // grab all the anchor tags on the page
-    const anchors = document.querySelectorAll('a')
-    // loop over them
-    anchors.forEach(anchor => {
-        // listen for clicks on each one
-        anchor.addEventListener('click', event => {
-            // grab the href attribute
-            const href = anchor.getAttribute('href')
-            // if the href starts with a #
-            if (href.charAt(0) === '#') {
-                // stop the default action
-                event.preventDefault()
-                // find the element the href points to and scroll it into view
-                document.querySelector(href).scrollIntoView({
-                    behavior: 'smooth'
-                })
-            }
-        })
-    })
-
-
-    // Hide Header on on scroll down
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('header').outerHeight();
-
-    $(window).scroll(function (event) {
-        didScroll = true;
-    });
-
-    setInterval(function () {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250);
-
-    function hasScrolled() {
-        var st = $(this).scrollTop();
-
-        // Make sure they scroll more than delta
-        if (Math.abs(lastScrollTop - st) <= delta)
-            return;
-
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
-        if (st > lastScrollTop && st > navbarHeight) {
-            // Scroll Down
-            $('header').removeClass('nav-down').addClass('nav-up');
-        } else {
-            // Scroll Up
-            if (st + $(window).height() < $(document).height()) {
-                $('header').removeClass('nav-up').addClass('nav-down');
-            }
-        }
-
-        lastScrollTop = st;
-    }
-
-    //scroll to top
-
-    $("a[href='#top']").on("click", function () {
-        document.body.scrollIntoView({ block: "start", behavior: "smooth" })
-        return false
-    })
-
-
-    const sections = document.querySelectorAll('section')
-    document.addEventListener('scroll', function () {
-        const topViewport = window.pageYOffset
-        const midViewport = topViewport + (window.innerHeight / 2)
-
-        sections.forEach(section => {
-            const midSection = section.offsetTop + (section.offsetHeight / 2)
-            const distanceToSection = midViewport - midSection
-
-            const parallaxTags = section.querySelectorAll('[data-parallax]')
-
-            parallaxTags.forEach(tag => {
-                const ratio = parseFloat(tag.getAttribute('data-parallax'))
-                const weightedDistance = distanceToSection * ratio
-
-                tag.style.transform = `translate(0, ${weightedDistance}px)`
-            })
-        })
-    })
-
-
-
-
-
 }
 
 
@@ -231,6 +230,7 @@ const runScripts = () => {
 
 
 runScripts()
+
 
 
 const bodyTag = document.querySelector("body")
