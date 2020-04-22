@@ -665,8 +665,8 @@ section.cards {
 
 
 .card div{
-  background-color: #fff;
-  background-image: url(/assets/images/Danielwellington/dw.svg);
+  background-color: #000e22;
+  background-image: url(/assets/images/Danielwellington/dw-card.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 300px 100px;
@@ -732,4 +732,65 @@ section.cards {
   
 }
 
+
+
+
+
+/*ÅWL.HTML*/
+section.book {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+div.face {
+  position: absolute;
+  background-size: cover;
+}
+
+div.face-cover {
+  height: 400px;
+  width: 260px;
+  background-image: url(/assets/images/AWL/book-cover.jpg);
+  transform: translateX(-50%) translateY(-50%) translateZ(4px);
+}
+
+div.face-side {
+  height: 400px;
+  width: 10px;
+  background-image: url(/assets/images/AWL/book-side.jpg);
+  transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(130px);
+}
+
+div.face-spine {
+  height: 400px;
+  width: 10px;
+  background-image:url(/assets/images/AWL/book-spine.jpg);
+  transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(130px);
+}
+
+div.face-top {
+  height: 10px;
+  width: 260px;
+  background-image: url(/assets/images/AWL/book-top.jpg);
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
+}
+
+div.face-bottom {
+  height: 10px;
+  width: 260px;
+  background-image:url(/assets/images/AWL/book-bottom.jpg);
+  transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
+}
+
+div.face-back {
+  height: 400px;
+  width: 260px;
+  background-image: url(/assets/images/AWL/book-back.jpg);
+  transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(4px) ;
+}
 
