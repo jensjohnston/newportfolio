@@ -742,7 +742,7 @@ section.book {
   /*position: absolute;*/
   top: 50%;
   left: 50%;
-  
+  height: 100vh;
   transform-style: preserve-3d;
   backface-visibility: hidden;
   will-change: transform;
