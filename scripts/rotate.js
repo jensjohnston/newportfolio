@@ -13,7 +13,7 @@ sectionBook.addEventListener("mousemove", function (event) {
     const box = document.querySelector("div.book")
 
     box.style.left = x + "px"
-    box.style.top = (sectionBook.clientTop + y) + "px"
+    box.style.top = (sectionBook.offsetTop + y) + "px"
 
     box.style.transform = xDir + "(" + midX + "deg) " + yDir + "(" + midY + "deg)"
 })
