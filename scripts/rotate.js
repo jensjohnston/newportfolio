@@ -6,7 +6,7 @@ const runRotate = () => {
 
     sectionBook.addEventListener("mousemove", function (event) {
         const x = event.pageX - sectionBook.clientLeft
-        const y = event.pageY - sectionBook.clientTop
+        const y = event.pageY - sectionBook.offsetLeft
 
         const midX = x - window.innerWidth / 2
         const midY = y - window.innerHeight / 2
@@ -29,9 +29,9 @@ const runRotate = () => {
         })
     })
 
+
+
+
 }
-
-
-
 
 runRotate()
