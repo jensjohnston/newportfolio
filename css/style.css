@@ -738,6 +738,7 @@ section.cards {
 
 /*ÅWL.HTML*/
 section.book {
+  background-color: #cccccc;
   position: absolute;
   top: 50%;
   left: 50%;
