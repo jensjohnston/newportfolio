@@ -1,7 +1,7 @@
 let xDir = "rotateY"
 let yDir = "rotateX"
 
-const sectionBook = document.querySelector("section.book")
+const sectionBook = document.querySelector("div.book")
 
 sectionBook.addEventListener("mousemove", function (event) {
     const x = event.pageX
@@ -10,7 +10,7 @@ sectionBook.addEventListener("mousemove", function (event) {
     const midX = x - window.innerWidth / 2
     const midY = y - window.innerHeight / 2
 
-    const box = document.querySelector("section.book")
+    const box = document.querySelector("div.book")
 
     box.style.left = x + "px"
     box.style.top = y + "px"

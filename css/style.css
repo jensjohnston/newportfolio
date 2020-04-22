@@ -738,15 +738,20 @@ section.cards {
 
 /*ÅWL.HTML*/
 
-section.book {
+
+section.book{
+  height: 100vh;
+}
+
+div.book {
   /*position: absolute;*/
   top: 50%;
   left: 50%;
-  height: 100vh;
   transform-style: preserve-3d;
   backface-visibility: hidden;
   will-change: transform;
 }
+
 
 div.faces {
   /*position: absolute;*/
