@@ -177,8 +177,9 @@ const runScripts = () => {
 
     let xDir = "rotateY"
     let yDir = "rotateX"
+    const sectionBook = document.querySelector("section.book")
 
-    document.addEventListener("mousemove", function (event) {
+    sectionBook.addEventListener("mousemove", function (event) {
         const x = event.pageX
         const y = event.pageY
 
