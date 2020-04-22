@@ -5,8 +5,8 @@ const runRotate = () => {
     const sectionBook = document.querySelector("section.book")
 
     sectionBook.addEventListener("mousemove", function (event) {
-        const x = event.pageX - sectionBook.clientLeft
-        const y = event.pageY - sectionBook.offsetLeft
+        const x = event.pageX - sectionBook.offsetLeft
+        const y = event.pageY - sectionBook.offsetTop
 
         const midX = x - window.innerWidth / 2
         const midY = y - window.innerHeight / 2
