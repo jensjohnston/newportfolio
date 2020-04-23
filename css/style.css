@@ -742,10 +742,11 @@ section.cards {
 section.book{
   position: relative;
   height: 100vh;
+  background-color: #ff8345;
 }
 
 div.book {
-  /*position: absolute;*/
+  position: absolute;
   top: 50%;
   left: 50%;
   transform-style: preserve-3d;
@@ -754,7 +755,7 @@ div.book {
 
 
 div.faces {
-  /*position: absolute;*/
+  position: absolute;
   background-size: cover;
 }
 
@@ -762,32 +763,32 @@ div.face-cover {
   height: 400px;
   width: 260px;
   background-image: url(/assets/images/AWL/book-cover.jpg);
-  transform: translateX(-50%) translateY(-50%) translateZ(20px);
+  transform: translateX(-50%) translateY(-50%) translateZ(10px);
 }
 
 div.face-side {
   height: 400px;
-  width: 40px;
+  width: 20px;
   background-image: url(/assets/images/AWL/book-side.jpg);
   transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(130px);
 }
 
 div.face-spine {
   height: 400px;
-  width: 40px;
+  width: 20px;
   background-image: url(/assets/images/AWL/book-spine.jpg);
   transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(130px);
 }
 
 div.face-top {
-  height: 40px;
+  height: 20px;
   width: 260px;
   background-image: url(/assets/images/AWL/book-top.jpg);
   transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(200px);
 }
 
 div.face-bottom {
-  height: 40px;
+  height: 20px;
   width: 260px;
   background-image: url(/assets/images/AWL/book-bottom.jpg);
   transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(200px);
@@ -797,16 +798,10 @@ div.face-back {
   height: 400px;
   width: 260px;
   background-image: url(/assets/images/AWL/book-back.jpg);
-  transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(20px) ;
+  transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(10px) ;
 }
 
-div.inputs {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background: white;
-  padding: 20px;
-}
+
 
 
 
