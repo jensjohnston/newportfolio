@@ -238,7 +238,7 @@ const runScripts = () => {
 runScripts()
 
 
-
+/*
 const bodyTag = document.querySelector("body")
 
 const wiper = document.createElement("div")
@@ -338,3 +338,4 @@ barba.init({
     ],
     views: []
 })
+*/
