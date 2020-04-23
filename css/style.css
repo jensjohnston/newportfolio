@@ -425,6 +425,12 @@ section.work{
   position: relative;
 }
 
+.image-ica {
+  background-image: url(/assets/images/Ica/ica-work.jpg);
+  position: relative;
+}
+
+
 .color-overlay {
   width: 100%;
   height: 100%;
