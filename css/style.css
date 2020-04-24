@@ -274,6 +274,28 @@ background-image: url(/assets/images/tennis-background.svg);
 }
 
 
+.image-up.loaded .shadow-longer  {
+  transform: translate(0, 0);
+}
+
+.image-up .shadow-longer  {
+  transition: transform 2s 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+
+  transform: translate(0, 120%);
+}
+
+.image-up.loaded .shadow-longer-ns  {
+  transform: translate(0, 0);
+}
+
+.image-up .shadow-longer-ns  {
+  transition: transform 2s 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+
+  transform: translate(0, 120%);
+}
+
+
+
 
 /*-----What I Do-----*/
 section.whatido{
@@ -429,6 +451,12 @@ section.work{
   background-image: url(/assets/images/Ica/ica-work.jpg);
   position: relative;
 }
+
+.image-ridely {
+  background-image: url(/assets/images/ridely/ridely-work.jpg);
+  position: relative;
+}
+
 
 
 .color-overlay {
@@ -833,7 +861,7 @@ div.face-back {
   top: 0;
 }
 
-.shadow-longer {
+.shadow-longer img {
   box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
               0 4px 2px rgba(0,0,0,0.09), 
               0 8px 4px rgba(0,0,0,0.09), 
@@ -845,7 +873,7 @@ div.face-back {
 
 
   @media screen and (min-width: 30em) {
-    .shadow-longer-ns {
+    .shadow-longer-ns img {
       box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
               0 4px 2px rgba(0,0,0,0.09), 
               0 8px 4px rgba(0,0,0,0.09), 
@@ -853,5 +881,3 @@ div.face-back {
               0 32px 16px rgba(0,0,0,0.09);
   }
   }
-
-
