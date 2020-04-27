@@ -335,8 +335,19 @@ section.whatido{
   position: -webkit-sticky;
   top: 0;*/
   color: var(--almostblack);
-  background-image: linear-gradient(180deg, #DADCE7, rgba(238, 238, 238, 1));
+  /*background-image: linear-gradient(180deg, #DADCE7, rgba(238, 238, 238, 1));*/
+  background-color: var(--acnegrey);
 }
+
+
+@media screen and (min-width: 30em) {
+  section.whatido {
+    background-color: var(--acnegrey);
+}
+}
+
+
+
 
 .image-pen{
   background-image: url(/assets/images/pentool.svg);
@@ -926,6 +937,7 @@ div.face-back {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+
  }
 
 
