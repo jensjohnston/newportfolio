@@ -568,9 +568,19 @@ section.work{
 
 
 
-  /*section.herowentbent{
+  section.herowentbent{
     height: 100vh;
-  }*/
+  }
+
+
+
+  @media screen and (max-width: 640px) {
+
+    section.herowentbent{
+      height: 100vh;
+    }
+  }
+
 
 
 
