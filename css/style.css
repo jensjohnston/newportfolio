@@ -1029,3 +1029,16 @@ div.face-back {
  
 }
 
+
+@media screen and (max-width: 640px) {
+
+  .logo-mobile-relative{
+    color: var(--almostblack);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+ 
+}
+
