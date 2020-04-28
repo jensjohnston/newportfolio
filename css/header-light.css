@@ -251,8 +251,8 @@
     @media (max-width: 667px) {
       
         nav {
-        height: 40%;
-        bottom: -40%;
+        height: 400px;
+        bottom: -400px;
         transition: ease-in-out 0.5s;
       }
     }
