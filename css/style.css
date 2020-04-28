@@ -984,8 +984,8 @@ div.face-back {
 
  .resume-text{
   color: var(--almostblack);
-  writing-mode: vertical-rl;
-  text-orientation: sideways;
+  /*writing-mode: vertical-rl;
+  text-orientation: sideways;*/
   position: absolute;
   top: 50%;
   left: 50%;
