@@ -180,14 +180,11 @@
   
   
   @media (max-width: 640px) {
-    
-    div.loading img {
-      width: 290px;
-    }
+  
   
     nav {
-      height: 75%;
-      bottom: -75%;
+      height: 100%;
+      bottom: -100%;
       transition: ease-in-out 0.5s;
     }
   
