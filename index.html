@@ -11,7 +11,8 @@
 	<link rel="stylesheet" href="/css/basscss-grid.css">
 	<link rel="stylesheet" href="/css/_base.css">
 	<link rel="stylesheet" href="/css/fonts.css">
-	<link rel="stylesheet" href="/css/header.css">
+	<link rel="stylesheet" href="/css/header-light.css">
+	<link rel="stylesheet" href="/css/scroll.css">
 	<link rel="stylesheet" href="/css/viewport.css">
 	<link rel=" stylesheet" href="/css/style.css">
 
@@ -25,49 +26,57 @@
 
 	<main data-barba="wrapper">
 		<article data-barba="container" data-title="Jens Johnston">
-			<!-- header + menu -->
-			<header class=" top" id="top" name="top">
-				<a href="index.html">
-					<h1 class="logo f3 f2-ns">jj.</h1>
-				</a>
-				<a href="#" class="menu-open"><img src="/assets/images/menu-icon.svg"></a>
-			</header>
+			
 
-			<div class="menu">
 
-				<!-- header in menu -->
-				<header>
-					<a href="index.html">
-						<h1 class="f3 f2-ns">Jens Johnston</h1>
+			<header class=">
+                <a href="index.html">
+                    <h1 class="logo f4 f2-ns">jj.</h1>
+                </a>
+            </header>
+
+
+
+			<div class="nav-button">
+				<button class="nav-toggle"></button>
+			  </div>
+			  
+			  <nav>
+				<div class="info">
+				<!--
+					<h2>
+						Jens Johnston
+					</h2>
+
+				-->	
+			  
+				  <div class="links">
+						<a href="/resume.html">Resume</a>
+					<a href="#work-scroll" class="js-scroll">Work</a>
+					<a href="#me" class="js-scroll">About me</a>
+					<a href="mailto:jens.johnston@hyperisland.se" class="">
+						Contact
 					</a>
-					<a href="#" class="menu-close"><img src="/assets/images/close-icon.svg"></a>
-				</header>
-
-				<nav id="top-navigation">
-					<div class="menu-big f2 f-headline-ns">
-						<a href="work.html">Work</a>
-						<a href="resume.html">Resume</a>
-					</div>
-
-					<div class="menu-small">
-						<p>Hola at me</p>
-						<a href="mailto:jens.johnston@hyperisland.se">
-							<h2 class="f4 f3-ns">jens.johnston@hyperisland.se</h2><span class="underline-grey"></span>
-						</a>
-					</div>
-			</div>
+				  </div>
+			  
+				</div>
+			  </nav>
 
 
 
 			<section class="hero  bg-dark-blue ph3 pv4 ph5-ns pv6-ns">
 				<div class="w-100 flex items-stretch vh-100">
-					<div class="w-70 flex justify-start items-center">
+					
+					<div class="w-80 flex justify-start items-center">
 						<h1 class="fontvarationhero f-subheadline-ns">
 							Hello Stranger
 						</h1>
 					</div>
 
-					<div class="w-30">
+					
+
+
+					<div class="w-20">
 						<svg width="100%" height="100%" id="arrow" viewBox="0 0 250 902" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
 							<path
@@ -77,11 +86,22 @@
 
 
 
-
-
-
 					</div>
 
+					<!--<div class="arrow-down"></div>-->
+
+				
+						<div id="mouse-scroll">
+						  <div class="mouse">
+							<div class="mouse-in"></div>
+						  </div>
+						  <span class="down-arrow-1"></span>
+						  <span class="down-arrow-2"></span>
+						  <span class="down-arrow-3"></span>
+						</div>
+						
+							
+							
 				</div>
 
 
@@ -91,7 +111,7 @@
 			<section class="hero2  bg-dark-blue">
 				<div class="flex flex-column justify-center items-start min-vh-100 ph3 pv4 ph5-ns pv6-ns">
 					<h1 class="f3  f-subheadline-ns fade">
-						Let's begin with an intro.
+						I'm Jens
 					</h1>
 				</div>
 
@@ -99,13 +119,13 @@
 
 
 
-			<section class="me fade-in lines bg-grey">
+			<section class="me fade-in lines bg-grey" id="me">
 				<div class="w-100 flex items-stretch flex-column flex-row-ns min-vh-100 me">
 					<div
 						class="w-100 w-50-ns flex flex-column justify-center items-start ph4 pv5 ph5-ns pv6-ns  bg-white aboutme  ">
 						<p class="pb2 fade f6 f5-ns">Who I am.</p>
 						<div class="f4 f1-ns fade pb4 lh-title-ns fade pb4 text-me">
-							I'm Jens, a visual designer. I build stuff to help express
+							I'm a visual designer. I build stuff to help express
 							people's imagination. Some of these people are Daniel Wellington, ICA and my grandpa.
 						</div>
 
@@ -235,7 +255,7 @@
 						</div>
 						<div class="w-50-ns flex justify-center items-center tennis">
 							<div class="content w-100 flex justify-center items-start">
-								<div class="tennis-ball w-100 w-80-ns" data-parallax="0.2"><svg width="100%"
+								<div class="tennis-ball w-100 w-80-ns" data-parallax="0.1"><svg width="100%"
 										height="100%" viewBox="0 0 581 493" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<g opacity="0.7">
@@ -362,7 +382,7 @@
 
 
 			<section class="work ban ba-ns bw1 b--gray bw1-ns w-100 bg">
-				<div class="flex flex-wrap min-vh-100 bg-dark-blue">
+				<div class="flex flex-wrap min-vh-100 bg-dark-blue" id="work-scroll">
 					<div
 						class="w-100 w-50-ns flex justify-center items-center bw1 bw1-ns br-ns b--gray border-bottom-mobile-light image-up">
 						<h1 class="f1 f-headline-ns lh-solid b work-text ph3 pv6 ph5-ns pv6-ns" id="work">Work.
@@ -399,16 +419,7 @@
 				</div>
 			</section>
 
-			<section class="footer">
-				<div class="flex bg-blue">
-					<div class="w-100 flex justify-center items-center ph3 pv6 ph5-ns pv6-ns">
-						<a href="mailto:jens.johnston@hyperisland.se"
-							class="flex f1 f-subheadline-ns lh-solid b footer">
-							leave a mail
-						</a>
-					</div>
-				</div>
-			</section>
+		
 
 		</article>
 	</main>
