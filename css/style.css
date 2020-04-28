@@ -982,12 +982,50 @@ div.face-back {
 
 
 
- .resume-text{
-  color: var(--almostblack);
-  /*writing-mode: vertical-rl;
-  text-orientation: sideways;*/
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
- }
+
+@media screen and (max-width: 640px) {
+
+    .resume-text{
+      color: var(--almostblack);
+      writing-mode: horizontal-tb;
+      text-orientation: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+     }
+   
+}
+
+
+
+
+
+@media screen and (min-width: 30em) {
+  .resume-text{
+    color: var(--almostblack);
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+  
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+
+  .logo-mobile{
+    color: var(--almostblack);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+ 
+}
+
